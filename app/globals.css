@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-yu-gothic text-gray-900 bg-white;
+  }
+}
+
+@layer utilities {
+  .font-mizolet {
+    font-family: mizolet, sans-serif;
+  }
+  
+  .font-yu-gothic {
+    font-family: yu-gothic-pr6n, sans-serif;
+  }
+}
+
