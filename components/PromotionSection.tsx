@@ -186,14 +186,11 @@ export default function PromotionSection() {
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-16">
                 <div className="flex-shrink-0 text-center md:text-left self-center">
                 <h2 
-                  className="text-4xl md:text-6xl text-owndays-red mb-2"
-                  style={{ 
-                    WebkitTextStroke: '2px black'
-                  }}
+                  className="text-4xl md:text-6xl text-owndays-red font-outfit mb-2 tracking-[0.15em] md:tracking-[0.1em] [text-shadow:-2px_-2px_0_black,2px_-2px_0_black,-2px_2px_0_black,2px_2px_0_black,-2px_0_0_black,2px_0_0_black,0_-2px_0_black,0_2px_0_black]"
                 >
                   NOTE
                 </h2>
-                <p className="text-gray-600 text-xs md:text-sm">注意事項</p>
+                <p className="text-xs md:text-xl font-light font-mizolet">注意事項</p>
               </div>
               <div className="flex-1">
                 <ul className="text-black text-xs md:text-sm space-y-2">
