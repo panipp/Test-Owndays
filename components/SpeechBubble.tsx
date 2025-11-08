@@ -1,0 +1,39 @@
+import React from 'react'
+import SpeechBubbleArrow from './SpeechBubbleArrow'
+
+interface SpeechBubbleProps {
+  label: string
+  arrowPosition?: 'left' | 'center' | 'right'
+  align?: 'left' | 'center' | 'right'
+  className?: string
+}
+
+const ALIGN_CLASSES = {
+  left: 'justify-start',
+  center: 'justify-center',
+  right: 'justify-end'
+}
+
+const BORDER_CLASSES = 'border-t-2 border-l-2 border-r-2 border-b-4 border-black'
+
+export default function SpeechBubble({ 
+  label, 
+  arrowPosition = 'right',
+  align = 'left',
+  className = '' 
+}: SpeechBubbleProps) {
+  return (
+    <div className={`relative flex ${ALIGN_CLASSES[align]} ${className}`}>
+      <div 
+        className={`bg-white rounded-lg px-6 py-1 relative ${BORDER_CLASSES} mb-3`}
+        role="note" 
+        aria-label={label}
+      >
+        <p className="text-owndays-red text-sm font-bold uppercase font-outfit">{label}</p>
+        <SpeechBubbleArrow position={arrowPosition} variant="desktop" />
+        <SpeechBubbleArrow position={arrowPosition} variant="mobile" />
+      </div>
+    </div>
+  )
+}
+
