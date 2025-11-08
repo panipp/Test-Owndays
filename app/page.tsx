@@ -1,6 +1,7 @@
 import NavBar from '@/components/NavBar'
 import PromotionSection from '@/components/PromotionSection'
 import PickUpSection from '@/components/PickUpSection'
+import FamilySection from '@/components/FamilySection'
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         
         {/* PICK UP Section */}
         <PickUpSection />
+        
+        {/* FAMILY Section */}
+        <FamilySection />
       </main>
     </div>
   )

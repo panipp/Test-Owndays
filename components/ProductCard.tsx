@@ -1,0 +1,71 @@
+import React from 'react'
+import Image from 'next/image'
+import FavoriteButton from './FavoriteButton'
+import CategoryBadge from './CategoryBadge'
+import PriceDisplay from './PriceDisplay'
+import OnlineStoreButton from './OnlineStoreButton'
+
+interface Product {
+  id: number | string
+  name: string
+  model: string
+  price: string
+  tax: string
+  category: string
+  image: string
+  imageMobile?: string
+}
+
+interface ProductCardProps {
+  product: Product
+  variant?: 'desktop' | 'mobile'
+  showFavorite?: boolean
+  buttonVariant?: 'rounded' | 'square'
+  className?: string
+}
+
+export default function ProductCard({
+  product,
+  variant = 'desktop',
+  showFavorite = true,
+  buttonVariant = 'rounded',
+  className = ''
+}: ProductCardProps) {
+  const imageSrc = variant === 'mobile' && product.imageMobile ? product.imageMobile : product.image
+  const imageHeight = variant === 'mobile' ? 'h-40' : 'h-32'
+  const gapClass = variant === 'mobile' ? 'gap-8 md:gap-3' : 'gap-2'
+  const marginX = variant === 'mobile' ? 'mx-6 md:mx-2' : ''
+
+  return (
+    <div className={`p-4 ${className} md:text-center`}>
+      <CategoryBadge
+        category={product.category}
+        variant="green"
+        size={variant === 'mobile' ? 'md' : 'sm'}
+      />
+      <p className="text-black font-bold text-base mb-1">{product.name}</p>
+      <p className="text-black text-xs mb-3">{product.model}</p>
+      <div className={`relative w-full ${imageHeight} mb-3`}>
+        <Image
+          src={imageSrc}
+          alt={`${product.name} ${product.model} - ${product.category} - ${product.price}`}
+          fill
+          className="object-contain"
+          loading="lazy"
+          sizes={variant === 'mobile' ? '(max-width: 768px) 50vw, 384px' : '(max-width: 1024px) 100vw, 384px'}
+        />
+      </div>
+      <PriceDisplay price={product.price} tax={product.tax} />
+      <div className={`flex items-center ${gapClass} ${marginX}`}>
+        <OnlineStoreButton
+          productName={product.name}
+          variant={buttonVariant}
+          size={variant === 'mobile' ? 'md' : 'sm'}
+          className="flex-1"
+        />
+        {showFavorite && <FavoriteButton productId={product.id} size="sm" />}
+      </div>
+    </div>
+  )
+}
+

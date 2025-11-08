@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { FaArrowRight, FaArrowLeft, FaArrowDown, FaArrowUp } from 'react-icons/fa'
 
 interface ArrowButtonProps {
   direction?: 'left' | 'right' | 'down' | 'up'
@@ -17,30 +18,23 @@ const SIZE_CLASSES = {
   lg: 'w-12 h-12',
 }
 
-const ARROW_PATHS = {
-  right: 'M9 5l7 7-7 7',
-  left: 'M15 19l-7-7 7-7',
-  down: 'M19 9l-7 7-7-7',
-  up: 'M5 15l7-7 7 7',
+const ICON_SIZE = {
+  sm: 12,
+  md: 16,
+  lg: 20,
 }
 
-function ArrowIcon({ direction }: { direction: 'left' | 'right' | 'down' | 'up' }) {
-  return (
-    <svg
-      className="w-1/2 h-1/2"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d={ARROW_PATHS[direction]}
-      />
-    </svg>
-  )
+const ARROW_ICONS = {
+  right: FaArrowRight,
+  left: FaArrowLeft,
+  down: FaArrowDown,
+  up: FaArrowUp,
+}
+
+function ArrowIcon({ direction, size = 'md' }: { direction: 'left' | 'right' | 'down' | 'up', size?: 'sm' | 'md' | 'lg' }) {
+  const iconSize = ICON_SIZE[size]
+  const IconComponent = ARROW_ICONS[direction]
+  return <IconComponent size={iconSize} />
 }
 
 export default function ArrowButton({
@@ -63,7 +57,7 @@ export default function ArrowButton({
   if (asDiv) {
     return (
       <div className={baseClasses} aria-label={`Arrow ${direction}`}>
-        <ArrowIcon direction={direction} />
+        <ArrowIcon direction={direction} size={size} />
       </div>
     )
   }
@@ -74,7 +68,7 @@ export default function ArrowButton({
       className={baseClasses}
       aria-label={`Arrow ${direction}`}
     >
-      <ArrowIcon direction={direction} />
+      <ArrowIcon direction={direction} size={size} />
     </button>
   )
 }

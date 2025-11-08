@@ -9,11 +9,11 @@ interface SectionTitleProps {
 
 const TEXT_SHADOW_CLASS = '[text-shadow:-2px_-2px_0_black,2px_-2px_0_black,-2px_2px_0_black,2px_2px_0_black,-2px_0_0_black,2px_0_0_black,0_-2px_0_black,0_2px_0_black]'
 
-export default function SectionTitle({ 
-  title, 
-  subtitle, 
+export default function SectionTitle({
+  title,
+  subtitle,
   variant = 'mobile',
-  className = '' 
+  className = ''
 }: SectionTitleProps) {
   if (variant === 'desktop') {
     return (

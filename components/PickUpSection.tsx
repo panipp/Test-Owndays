@@ -25,7 +25,7 @@ function PurposeSection({ variant }: { variant: 'desktop' | 'mobile' }) {
 export default function PickUpSection() {
   return (
     <section className="w-full lg:w-3/4 mx-auto my-16 lg:my-24 bg-white" aria-label="おすすめ商品セクション">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6 lg:px-8">
         <div className="hidden lg:block">
           <div className="flex items-stretch gap-32 mb-6">
             <SectionTitle title="PICK UP" subtitle="おすすめアイテム" variant="desktop" />
