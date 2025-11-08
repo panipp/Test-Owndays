@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function PromotionSection() {
   return (
     <section className="w-full bg-white relative overflow-hidden">
-      <div className="container mx-auto p-4 sm:p-6 md:p-8">
+      <div className="container mx-auto p-6 lg:p-8">
         <div className="bg-owndays-red rounded-2xl md:rounded-3xl p-6 md:p-12">
           <div className="mx-auto">
             <div className="mb-8 md:mb-12 lg:mx-12">
@@ -66,18 +66,7 @@ export default function PromotionSection() {
                 loading="lazy"
               />
             </div>
-            <div className="hidden md:block lg:hidden relative w-full max-w-2xl mx-auto my-8">
-              <Image 
-                src="/images/Section1/main-text-logo-1x.png" 
-                alt="2本同時購入で 2本目半額！" 
-                width={800}
-                height={200}
-                className="w-full h-auto object-contain" 
-                loading="lazy"
-                unoptimized
-              />
-            </div>
-            <div className="hidden lg:block relative w-full max-w-2xl mx-auto my-8">
+            <div className="hidden md:block relative w-1/2 lg:w-full max-w-2xl mx-auto my-8">
               <Image 
                 src="/images/Section1/main-text-logo.png" 
                 alt="2本同時購入で 2本目半額！" 
