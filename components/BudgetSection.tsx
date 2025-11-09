@@ -53,7 +53,7 @@ export default function BudgetSection() {
   }
 
   return (
-    <section className="w-full bg-white py-20 md:py-12 lg:py-24">
+    <section className="w-full bg-white py-20 md:py-16 lg:py-20">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="mb-24">
           <div className="flex justify-center mb-4">

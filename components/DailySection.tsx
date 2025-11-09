@@ -94,7 +94,6 @@ export default function DailySection() {
           backgroundColor="bg-owndays-brown-3"
           speechBubbleLabel="OPTION"
           title="おすすめオプション"
-          className="mb-8"
         />
       </div>
 

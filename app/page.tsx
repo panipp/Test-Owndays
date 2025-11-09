@@ -4,6 +4,7 @@ import PickUpSection from '@/components/PickUpSection'
 import FamilySection from '@/components/FamilySection'
 import DailySection from '@/components/DailySection'
 import BudgetSection from '@/components/BudgetSection'
+import OptionSection from '@/components/OptionSection'
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
         
         {/* Budget Selection Section */}
         <BudgetSection />
+        
+        {/* OPTION Section */}
+        <OptionSection />
       </main>
     </div>
   )
