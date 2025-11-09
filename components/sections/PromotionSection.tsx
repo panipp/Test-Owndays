@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ResponsiveImage from '@/components/common/ResponsiveImage'
 
 export default function PromotionSection() {
   return (
@@ -8,73 +8,56 @@ export default function PromotionSection() {
           <div className="mx-auto">
             <div className="mb-8 md:mb-12 lg:mx-12">
               <div className="hidden md:grid md:grid-cols-[1fr_2fr] lg:grid-cols-[2fr_3fr] md:gap-12 lg:gap-32 md:my-8 w-full items-center">
-                <div className="relative w-full h-auto lg:px-8 lg:py-4 min-w-0">
-                  <Image 
-                    src="/images/Section1/date-layout.png" 
-                    alt="キャンペーン期間: 2024年12月22日まで" 
-                    width={400}
-                    height={600}
-                    className="w-full h-auto object-contain" 
-                    priority
-                  />
-                </div>
-                <div className="relative w-full h-auto min-w-0">
-                  <Image 
-                    src="/images/Section1/Group.png" 
-                    alt="OWNDAYS メガネアイコン" 
-                    width={400}
-                    height={600}
-                    className="w-full h-auto object-contain" 
-                    priority
-                  />
-                </div>
+                <ResponsiveImage
+                  desktopSrc="/images/Section1/date-layout.png"
+                  mobileSrc="/images/Section1/date-layout-1x.png"
+                  alt="キャンペーン期間: 2024年12月22日まで"
+                  width={400}
+                  height={600}
+                  priority
+                  className="lg:px-8 lg:py-4 min-w-0"
+                />
+                <ResponsiveImage
+                  desktopSrc="/images/Section1/Group.png"
+                  mobileSrc="/images/Section1/Group-1x.png"
+                  alt="OWNDAYS メガネアイコン"
+                  width={400}
+                  height={600}
+                  priority
+                  className="min-w-0"
+                />
               </div>
 
               <div className="grid grid-cols-1 gap-4 md:hidden mb-6">
-                <div className="relative w-full h-auto px-8 py-4">
-                  <Image 
-                    src="/images/Section1/date-layout-1x.png" 
-                    alt="キャンペーン期間: 2024年12月22日まで" 
-                    width={400}
-                    height={600}
-                    className="w-full h-auto object-contain" 
-                    priority
-                  />
-                </div>
-                <div className="relative w-full h-auto">
-                  <Image 
-                    src="/images/Section1/Group-1x.png" 
-                    alt="OWNDAYS メガネアイコン" 
-                    width={400}
-                    height={600}
-                    className="w-full h-auto object-contain" 
-                    priority
-                  />
-                </div>
+                <ResponsiveImage
+                  desktopSrc="/images/Section1/date-layout.png"
+                  mobileSrc="/images/Section1/date-layout-1x.png"
+                  alt="キャンペーン期間: 2024年12月22日まで"
+                  width={400}
+                  height={600}
+                  priority
+                  className="px-8 py-4"
+                />
+                <ResponsiveImage
+                  desktopSrc="/images/Section1/Group.png"
+                  mobileSrc="/images/Section1/Group-1x.png"
+                  alt="OWNDAYS メガネアイコン"
+                  width={400}
+                  height={600}
+                  priority
+                />
               </div>
             </div>
 
             <div className="mb-8 md:mb-12 text-center">
-            <div className="relative w-full max-w-2xl mx-auto mb-6 md:hidden">
-              <Image 
-                src="/images/Section1/main-text-logo-1x.png" 
-                alt="2本同時購入で 2本目半額！" 
+              <ResponsiveImage
+                desktopSrc="/images/Section1/main-text-logo.png"
+                mobileSrc="/images/Section1/main-text-logo-1x.png"
+                alt="2本同時購入で 2本目半額！"
                 width={800}
                 height={200}
-                className="w-full h-auto object-contain" 
-                loading="lazy"
+                className="mb-6 md:mb-0 md:w-1/2 lg:w-full max-w-2xl mx-auto md:my-8"
               />
-            </div>
-            <div className="hidden md:block relative w-1/2 lg:w-full max-w-2xl mx-auto my-8">
-              <Image 
-                src="/images/Section1/main-text-logo.png" 
-                alt="2本同時購入で 2本目半額！" 
-                width={800}
-                height={200}
-                className="w-full h-auto object-contain" 
-                loading="lazy"
-              />
-            </div>
             <div className="md:hidden text-center text-lg m-4">
               <p className="text-white mb-2">まとめ買いがオトク!</p>
               <p className="text-white mb-2">家族・友達や恋人、</p>
@@ -102,26 +85,14 @@ export default function PromotionSection() {
             </p>
             
             <div className="lg:hidden">
-              <div className="md:hidden relative w-full max-w-xl mx-auto mb-6">
-                <Image 
-                  src="/images/Section1/main-example-1x.png" 
-                  alt="家族・友達・恋人と一緒にメガネを購入するイラスト" 
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-contain" 
-                  loading="lazy"
-                />
-              </div>
-              <div className="hidden md:block relative w-full max-w-xl mx-auto mb-6">
-                <Image 
-                  src="/images/Section1/main-example.png" 
-                  alt="家族・友達・恋人と一緒にメガネを購入するイラスト" 
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-contain" 
-                  loading="lazy"
-                />
-              </div>
+              <ResponsiveImage
+                desktopSrc="/images/Section1/main-example.png"
+                mobileSrc="/images/Section1/main-example-1x.png"
+                alt="家族・友達・恋人と一緒にメガネを購入するイラスト"
+                width={600}
+                height={400}
+                className="max-w-xl mx-auto mb-6"
+              />
               <div className="w-full h-8 border-t-4 border-owndays-red mb-4" />
               <div className="text-center mb-4">
                 <p className="text-xl md:text-2xl font-bold mb-2">2本目半額で</p>
@@ -133,14 +104,12 @@ export default function PromotionSection() {
             </div>
 
             <div className="hidden lg:flex lg:items-stretch lg:gap-6 lg:mb-4 lg:mx-6">
-              <div className="relative w-full h-auto flex-[2] flex items-center m-3">
-                <Image 
-                  src="/images/Section1/main-example.png" 
-                  alt="家族・友達・恋人と一緒にメガネを購入するイラスト" 
+              <div className="flex-[2] flex items-center m-3">
+                <ResponsiveImage
+                  desktopSrc="/images/Section1/main-example.png"
+                  alt="家族・友達・恋人と一緒にメガネを購入するイラスト"
                   width={600}
                   height={400}
-                  className="w-full h-auto object-contain" 
-                  loading="lazy"
                 />
               </div>
               <div className="border-l-4 border-owndays-red flex-shrink-0" />
@@ -174,7 +143,7 @@ export default function PromotionSection() {
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-16">
                 <div className="flex-shrink-0 text-center md:text-left self-center">
                 <h2 
-                  className="text-4xl md:text-6xl text-owndays-red font-outfit mb-2 tracking-[0.15em] md:tracking-[0.1em] [text-shadow:-2px_-2px_0_black,2px_-2px_0_black,-2px_2px_0_black,2px_2px_0_black,-2px_0_0_black,2px_0_0_black,0_-2px_0_black,0_2px_0_black]"
+                  className="text-4xl md:text-6xl text-owndays-red font-outfit mb-2 tracking-[0.15em] md:tracking-[0.1em] text-shadow-outline"
                 >
                   NOTE
                 </h2>

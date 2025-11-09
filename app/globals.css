@@ -29,6 +29,10 @@
     -webkit-text-stroke: 1px black;
   }
   
+  .text-shadow-outline {
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black, -2px 0 0 black, 2px 0 0 black, 0 -2px 0 black, 0 2px 0 black;
+  }
+  
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -38,4 +42,3 @@
     display: none;
   }
 }
-
