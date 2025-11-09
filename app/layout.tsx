@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Outfit, Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
+import MobileNavBottom from '@/components/MobileNavBottom'
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -49,6 +50,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased flex flex-col min-h-screen">
         {children}
+        <MobileNavBottom />
       </body>
     </html>
   )
