@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import ArrowButton from './ArrowButton'
-import OnlineStoreButton from './OnlineStoreButton'
-import PriceDisplay from './PriceDisplay'
+import ArrowButton from '@/components/buttons/ArrowButton'
+import OnlineStoreButton from '@/components/buttons/OnlineStoreButton'
+import PriceDisplay from '@/components/common/PriceDisplay'
 import { Product } from '@/lib/types'
 
 interface ProductCarouselProps {

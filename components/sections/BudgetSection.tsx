@@ -1,11 +1,11 @@
 'use client'
 
 import Image from 'next/image'
-import ArrowButton from './ArrowButton'
-import SpeechBubble from './SpeechBubble'
-import ProductCarousel from './ProductCarousel'
-import OnlineStoreButton from './OnlineStoreButton'
-import PriceDisplay from './PriceDisplay'
+import ArrowButton from '@/components/buttons/ArrowButton'
+import SpeechBubble from '@/components/common/SpeechBubble'
+import ProductCarousel from '@/components/products/ProductCarousel'
+import OnlineStoreButton from '@/components/buttons/OnlineStoreButton'
+import PriceDisplay from '@/components/common/PriceDisplay'
 import { Product } from '@/lib/types'
 
 interface PriceRange {

@@ -1,5 +1,5 @@
-import ArrowButton from './ArrowButton'
-import OptionCard from './OptionCard'
+import ArrowButton from '@/components/buttons/ArrowButton'
+import OptionCard from '@/components/common/OptionCard'
 
 export default function OptionSection() {
   const options = [

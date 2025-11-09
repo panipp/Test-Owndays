@@ -1,4 +1,4 @@
-import SpeechBubbleArrow from './SpeechBubbleArrow'
+import SpeechBubbleArrow from '@/components/common/SpeechBubbleArrow'
 
 interface SpeechBubbleProps {
   label: string

@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import ProductGrid from './ProductGrid'
-import OptionsList from './OptionsList'
-import FullWidthSection from './FullWidthSection'
-import SectionHeader from './SectionHeader'
-import ImageTextContent from './ImageTextContent'
+import ProductGrid from '@/components/products/ProductGrid'
+import OptionsList from '@/components/common/OptionsList'
+import FullWidthSection from '@/components/sections/FullWidthSection'
+import SectionHeader from '@/components/common/SectionHeader'
+import ImageTextContent from '@/components/common/ImageTextContent'
 import { Product, Option } from '@/lib/types'
 
 export default function DailySection() {

@@ -1,6 +1,6 @@
-import SpeechBubble from './SpeechBubble'
-import FullWidthSection from './FullWidthSection'
-import OptionCard from './OptionCard'
+import SpeechBubble from '@/components/common/SpeechBubble'
+import FullWidthSection from '@/components/sections/FullWidthSection'
+import OptionCard from '@/components/common/OptionCard'
 import { Option } from '@/lib/types'
 
 interface OptionsListProps {

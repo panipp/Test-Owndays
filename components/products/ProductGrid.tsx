@@ -1,4 +1,4 @@
-import ProductCard from './ProductCard'
+import ProductCard from '@/components/products/ProductCard'
 import { Product } from '@/lib/types'
 import { BadgeVariant, ButtonVariant, Variant } from '@/lib/types'
 

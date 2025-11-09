@@ -1,4 +1,4 @@
-import ArrowButton from './ArrowButton'
+import ArrowButton from '@/components/buttons/ArrowButton'
 
 interface OptionBoxProps {
   text: string

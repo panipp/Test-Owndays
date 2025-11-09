@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Outfit, Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
-import MobileNavBottom from '@/components/MobileNavBottom'
+import MobileNavBottom from '@/components/navigation/MobileNavBottom'
 
 const outfit = Outfit({
   subsets: ['latin'],

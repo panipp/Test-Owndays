@@ -1,10 +1,10 @@
-import NavBar from '@/components/NavBar'
-import PromotionSection from '@/components/PromotionSection'
-import PickUpSection from '@/components/PickUpSection'
-import FamilySection from '@/components/FamilySection'
-import DailySection from '@/components/DailySection'
-import BudgetSection from '@/components/BudgetSection'
-import OptionSection from '@/components/OptionSection'
+import NavBar from '@/components/navigation/NavBar'
+import PromotionSection from '@/components/sections/PromotionSection'
+import PickUpSection from '@/components/sections/PickUpSection'
+import FamilySection from '@/components/sections/FamilySection'
+import DailySection from '@/components/sections/DailySection'
+import BudgetSection from '@/components/sections/BudgetSection'
+import OptionSection from '@/components/sections/OptionSection'
 
 export default function Home() {
   return (

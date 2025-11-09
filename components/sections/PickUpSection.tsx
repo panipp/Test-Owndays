@@ -1,6 +1,6 @@
-import SpeechBubble from './SpeechBubble'
-import OptionBox from './OptionBox'
-import SectionTitle from './SectionTitle'
+import SpeechBubble from '@/components/common/SpeechBubble'
+import OptionBox from '@/components/common/OptionBox'
+import SectionTitle from '@/components/common/SectionTitle'
 
 const OPTIONS = [
   { id: 1, text: '目的から選ぶ' },

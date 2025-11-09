@@ -1,4 +1,4 @@
-import ArrowButton from './ArrowButton'
+import ArrowButton from '@/components/buttons/ArrowButton'
 import { Option } from '@/lib/types'
 
 interface OptionCardProps {

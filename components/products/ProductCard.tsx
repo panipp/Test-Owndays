@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import FavoriteButton from './FavoriteButton'
-import CategoryBadge from './CategoryBadge'
-import PriceDisplay from './PriceDisplay'
-import OnlineStoreButton from './OnlineStoreButton'
+import FavoriteButton from '@/components/buttons/FavoriteButton'
+import CategoryBadge from '@/components/common/CategoryBadge'
+import PriceDisplay from '@/components/common/PriceDisplay'
+import OnlineStoreButton from '@/components/buttons/OnlineStoreButton'
 import { Product, BadgeVariant, ButtonVariant, Variant } from '@/lib/types'
 
 interface ProductCardProps {

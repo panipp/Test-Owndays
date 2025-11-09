@@ -1,11 +1,11 @@
 import Image from 'next/image'
-import ArrowButton from './ArrowButton'
-import OptionsList from './OptionsList'
-import SpeechBubble from './SpeechBubble'
-import ProductGrid from './ProductGrid'
-import FullWidthSection from './FullWidthSection'
-import SectionHeader from './SectionHeader'
-import ImageTextContent from './ImageTextContent'
+import ArrowButton from '@/components/buttons/ArrowButton'
+import OptionsList from '@/components/common/OptionsList'
+import SpeechBubble from '@/components/common/SpeechBubble'
+import ProductGrid from '@/components/products/ProductGrid'
+import FullWidthSection from '@/components/sections/FullWidthSection'
+import SectionHeader from '@/components/common/SectionHeader'
+import ImageTextContent from '@/components/common/ImageTextContent'
 import { Product, Option } from '@/lib/types'
 
 export default function FamilySection() {
