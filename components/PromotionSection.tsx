@@ -122,7 +122,7 @@ export default function PromotionSection() {
                   loading="lazy"
                 />
               </div>
-              <div className="w-full h-8 border-t-4 border-owndays-red mb-4"></div>
+              <div className="w-full h-8 border-t-4 border-owndays-red mb-4" />
               <div className="text-center mb-4">
                 <p className="text-black text-xl md:text-2xl font-bold mb-2">2本目半額で</p>
                 <p className="text-owndays-red font-bold flex items-center justify-center gap-1">
@@ -143,7 +143,7 @@ export default function PromotionSection() {
                   loading="lazy"
                 />
               </div>
-              <div className="border-l-4 border-owndays-red flex-shrink-0"></div>
+              <div className="border-l-4 border-owndays-red flex-shrink-0" />
               <div className="text-center flex-[3] self-center">
                 <p className="text-black text-base font-bold flex items-center justify-center gap-2">
                   <span>2本目半額で</span>

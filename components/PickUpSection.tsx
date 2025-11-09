@@ -1,4 +1,3 @@
-import React from 'react'
 import SpeechBubble from './SpeechBubble'
 import OptionBox from './OptionBox'
 import SectionTitle from './SectionTitle'
@@ -27,7 +26,7 @@ export default function PickUpSection() {
     <section className="w-full lg:w-3/4 mx-auto my-16 lg:my-24 bg-white" aria-label="おすすめ商品セクション">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="hidden lg:block">
-          <div className="flex items-stretch gap-32 mb-6">
+          <div className="flex items-stretch gap-16 xl:gap-32 mb-6">
             <SectionTitle title="PICK UP" subtitle="おすすめアイテム" variant="desktop" />
             <div className="flex items-stretch gap-6 flex-1">
               {OPTIONS.slice(0, 2).map((option) => (

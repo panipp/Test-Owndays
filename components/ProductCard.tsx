@@ -25,7 +25,6 @@ export default function ProductCard({
   const imageSrc = variant === 'mobile' && product.imageMobile ? product.imageMobile : product.image
   const imageHeight = variant === 'mobile' ? 'h-40' : 'h-32'
   const gapClass = variant === 'mobile' ? 'gap-8 md:gap-3' : 'gap-2'
-  const marginX = variant === 'mobile' ? 'mx-6 md:mx-2' : ''
 
   return (
     <div className={`p-4 ${className} md:text-center`}>
@@ -47,12 +46,12 @@ export default function ProductCard({
         />
       </div>
       <PriceDisplay price={product.price} tax={product.tax} />
-      <div className={`flex items-center ${gapClass} ${marginX}`}>
+      <div className={`flex items-center justify-center ${gapClass}`}>
         <OnlineStoreButton
           productName={product.name}
           variant={buttonVariant}
-          size={variant === 'mobile' ? 'md' : 'sm'}
-          className="flex-1"
+          size="md"
+          className="w-auto"
         />
         {showFavorite && <FavoriteButton productId={product.id} size="sm" />}
       </div>

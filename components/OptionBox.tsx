@@ -29,7 +29,7 @@ export default function OptionBox({
       >
         <span className="text-black text-base flex-1 text-center">{text}</span>
         <div className="flex items-center gap-4 h-full">
-          <div className="w-[2px] h-full bg-black" aria-hidden="true"></div>
+          <div className="w-[2px] h-full bg-black" aria-hidden="true" />
           <ArrowButton direction="down" size="sm" asDiv />
         </div>
       </button>

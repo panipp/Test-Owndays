@@ -29,7 +29,7 @@ export default function OptionsList({
     <FullWidthSection backgroundColor={backgroundColor} className={className} py="py-16 lg:py-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row md:items-center md:gap-12 lg:items-center">
-          <div className="md:w-1/3 flex-shrink-0 md:justify-items-center">
+          <div className="md:w-1/3 flex-shrink-0 justify-items-center">
             <SpeechBubble label={speechBubbleLabel} arrowPosition="right" align="left" className="mb-1" textColor="black" />
             <p className="text-black text-2xl lg:text-3xl font-bold mb-12 md:mb-0 font-mizolet">{title}</p>
           </div>
@@ -47,7 +47,7 @@ export default function OptionsList({
                     </p>
                   </div>
                   <div className="flex items-center gap-4 self-stretch">
-                    <div className="w-[2px] h-full bg-black" aria-hidden="true"></div>
+                    <div className="w-[2px] h-full bg-black" aria-hidden="true" />
                     <ArrowButton direction="right" size="sm" asDiv />
                   </div>
                 </div>

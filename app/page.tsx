@@ -3,6 +3,7 @@ import PromotionSection from '@/components/PromotionSection'
 import PickUpSection from '@/components/PickUpSection'
 import FamilySection from '@/components/FamilySection'
 import DailySection from '@/components/DailySection'
+import BudgetSection from '@/components/BudgetSection'
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
         
         {/* DAILY Section */}
         <DailySection />
+        
+        {/* Budget Selection Section */}
+        <BudgetSection />
       </main>
     </div>
   )
