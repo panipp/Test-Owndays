@@ -19,8 +19,8 @@ export default function PriceDisplay({
 }: PriceDisplayProps) {
   return (
     <p className={`mb-4 ${className}`}>
-      <span className={`text-black font-bold ${PRICE_SIZE_CLASSES[priceSize]}`}>{price}</span>
-      <span className="text-black text-sm ml-1">{tax}</span>
+      <span className={`font-bold ${PRICE_SIZE_CLASSES[priceSize]}`}>{price}</span>
+      <span className="text-sm ml-1">{tax}</span>
     </p>
   )
 }

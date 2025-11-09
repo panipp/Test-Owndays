@@ -74,10 +74,10 @@ export default function FamilySection() {
               <SectionHeader text={['小さなお子様がいる', '家庭でも']} badges={['安', '心']} />
               <div className="text-left mb-4">
                 <div className="bg-white px-2 py-1 lg:px-4 lg:py-2 inline-block">
-                  <p className="text-black text-2xl lg:text-4xl font-bold text-center font-mizolet">軽くて丈夫なフレーム</p>
+                  <p className="text-2xl lg:text-4xl font-bold text-center font-mizolet">軽くて丈夫なフレーム</p>
                 </div>
               </div>
-              <p className="text-black text-sm lg:text-md mb-6 font-noto-sans-jp py-2 px-0 leading-relaxed">
+              <p className="text-sm lg:text-md mb-6 font-noto-sans-jp py-2 px-0 leading-relaxed">
                 {descriptionText}
               </p>
             </ImageTextContent>
@@ -112,11 +112,11 @@ export default function FamilySection() {
                   <div className="flex-1">
                     <div className="flex items-center justify-between gap-4">
                       <div>
-                        <p className="text-black font-bold text-sm md:text-lg lg:text-xl mb-2 text-left">
+                        <p className="font-bold text-sm md:text-lg lg:text-xl mb-2 text-left">
                           お子さまの度数や保証書を
                           <span className="bg-owndays-yellow px-1">一括管理!</span>
                         </p>
-                        <p className="text-black text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-left">親子で楽らくリンク機能</p>
+                        <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-left">親子で楽らくリンク機能</p>
                       </div>
                       <div className="group flex-shrink-0">
                         <ArrowButton direction="right" size="sm" />
@@ -147,10 +147,10 @@ export default function FamilySection() {
               />
               <div className="text-center md:text-left mb-4">
                 <div className="bg-white px-2 inline-block">
-                  <p className="text-black text-2xl font-bold text-center font-mizolet">軽くて丈夫なフレーム</p>
+                  <p className="text-2xl font-bold text-center font-mizolet">軽くて丈夫なフレーム</p>
                 </div>
               </div>
-              <p className="text-black text-sm mb-6 font-noto-sans-jp py-2 px-6 md:px-0 leading-relaxed">
+              <p className="text-sm mb-6 font-noto-sans-jp py-2 px-6 md:px-0 leading-relaxed">
                 {descriptionText}
               </p>
             </ImageTextContent>
@@ -182,11 +182,11 @@ export default function FamilySection() {
                   <div className="relative w-full h-32 mb-4">
                     <Image src="/images/Section3/isolated_tablet_laptop_and_smartphone_composition-1x.png" alt="タブレットとスマートフォンの画面表示" fill className="object-contain" loading="lazy" sizes="100vw" />
                   </div>
-                  <p className="text-black font-bold text-sm mb-2">
+                  <p className="font-bold text-sm mb-2">
                     お子さまの度数や保証書を
                     <span className="bg-owndays-yellow px-1">一括管理!</span>
                   </p>
-                  <p className="text-black text-xl font-bold mb-4">親子で楽らくリンク機能</p>
+                  <p className="text-xl font-bold mb-4">親子で楽らくリンク機能</p>
                 </div>
                 <div className="group flex justify-end">
                   <div className="rotate-45">

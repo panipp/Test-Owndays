@@ -37,19 +37,19 @@ export default function NavBar() {
                 </div>
                 
                 <nav className="flex items-center space-x-6 font-proxima-nova">
-                  <a href="#" className="text-sm text-black hover:text-gray-600 transition-colors">
+                  <a href="#" className="text-sm hover:text-gray-600 transition-colors">
                     商品検索
                   </a>
-                  <a href="#" className="text-sm text-black hover:text-gray-600 transition-colors">
+                  <a href="#" className="text-sm hover:text-gray-600 transition-colors">
                     ブランド
                   </a>
-                  <a href="#" className="text-sm text-black hover:text-gray-600 transition-colors">
+                  <a href="#" className="text-sm hover:text-gray-600 transition-colors">
                     レンズ
                   </a>
-                  <a href="#" className="text-sm text-black hover:text-gray-600 transition-colors">
+                  <a href="#" className="text-sm hover:text-gray-600 transition-colors">
                     OWNDAYSについて
                   </a>
-                  <a href="#" className="text-sm text-black hover:text-gray-600 transition-colors">
+                  <a href="#" className="text-sm hover:text-gray-600 transition-colors">
                     店舗検索
                   </a>
                 </nav>
@@ -108,14 +108,14 @@ export default function NavBar() {
       {/* Mobile Navigation */}
       <nav className="lg:hidden">
         <div className="px-4 py-3 flex items-center justify-between bg-white border-b border-gray-200">
-          <button className="p-2 text-black hover:bg-gray-100 rounded-full transition-colors relative" aria-label="Shopping Cart">
+          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors relative" aria-label="Shopping Cart">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <span className="absolute top-0 right-0 w-4 h-4 bg-gray-700 text-white text-xs rounded-full flex items-center justify-center font-proxima-nova">0</span>
           </button>
           
-          <button className="p-2 text-black hover:bg-gray-100 rounded-full transition-colors" aria-label="Search">
+          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Search">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
@@ -134,7 +134,7 @@ export default function NavBar() {
             </a>
           </div>
           
-          <button className="p-2 text-black hover:bg-gray-100 rounded-full transition-colors" aria-label="Call">
+          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Call">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
@@ -142,7 +142,7 @@ export default function NavBar() {
           
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-black hover:bg-gray-100 rounded-full transition-colors"
+            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -181,11 +181,11 @@ export default function NavBar() {
         
         {mobileMenuOpen && (
           <nav className="px-4 pb-4 space-y-2 border-t border-gray-200 bg-white">
-            <a href="#" className="block py-2 text-sm text-black font-proxima-nova hover:bg-gray-50 transition-colors">商品検索</a>
-            <a href="#" className="block py-2 text-sm text-black font-proxima-nova hover:bg-gray-50 transition-colors">ブランド</a>
-            <a href="#" className="block py-2 text-sm text-black font-proxima-nova hover:bg-gray-50 transition-colors">レンズ</a>
-            <a href="#" className="block py-2 text-sm text-black font-proxima-nova hover:bg-gray-50 transition-colors">OWNDAYSについて</a>
-            <a href="#" className="block py-2 text-sm text-black font-proxima-nova hover:bg-gray-50 transition-colors">店舗検索</a>
+            <a href="#" className="block py-2 text-sm font-proxima-nova hover:bg-gray-50 transition-colors">商品検索</a>
+            <a href="#" className="block py-2 text-sm font-proxima-nova hover:bg-gray-50 transition-colors">ブランド</a>
+            <a href="#" className="block py-2 text-sm font-proxima-nova hover:bg-gray-50 transition-colors">レンズ</a>
+            <a href="#" className="block py-2 text-sm font-proxima-nova hover:bg-gray-50 transition-colors">OWNDAYSについて</a>
+            <a href="#" className="block py-2 text-sm font-proxima-nova hover:bg-gray-50 transition-colors">店舗検索</a>
           </nav>
         )}
       </nav>

@@ -62,8 +62,8 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
                     sizes="(max-width: 768px) 100vw, 50vw" 
                   />
                 </div>
-                <p className="text-black font-bold text-base mb-1">{product.name}</p>
-                <p className="text-black text-xs mb-3">{product.model}</p>
+                <p className="font-bold text-base mb-1">{product.name}</p>
+                <p className="text-xs mb-3">{product.model}</p>
                 <PriceDisplay price={product.price} tax={product.tax} />
                 <div className="flex justify-center">
                   <OnlineStoreButton productName={product.name} variant="rounded" size="md" className="w-auto" />

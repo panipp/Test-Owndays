@@ -16,7 +16,7 @@ function PurposeSection({ variant }: { variant: 'desktop' | 'mobile' }) {
   return (
     <div className={`${spacingClass} text-center`}>
       <SpeechBubble label="PURPOSE" arrowPosition="right" align="center" />
-      <p className={`text-black ${textSizeClass} font-mizolet`}>目的から選ぶ</p>
+      <p className={`${textSizeClass} font-mizolet`}>目的から選ぶ</p>
     </div>
   )
 }

@@ -48,7 +48,7 @@ export default function ArrowButton({
   colorVariant = 'black'
 }: ArrowButtonProps) {
   const colorClasses = colorVariant === 'white' 
-    ? 'bg-white text-black border-2 border-black hover:bg-gray-100'
+    ? 'bg-white border-2 border-black hover:bg-gray-100'
     : 'bg-black text-white'
   
   const baseClasses = joinClasses(

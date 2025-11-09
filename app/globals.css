@@ -8,7 +8,7 @@
   }
   
   body {
-    @apply font-yu-gothic text-gray-900 bg-white;
+    @apply font-yu-gothic text-black bg-white;
   }
 }
 

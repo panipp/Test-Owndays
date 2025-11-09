@@ -7,8 +7,8 @@ interface OnlineStoreButtonProps {
 }
 
 const VARIANT_CLASSES = {
-  rounded: 'bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black text-black rounded-full hover:shadow-lg transition-shadow font-bold',
-  square: 'bg-white border-2 border-black text-black rounded-lg hover:bg-gray-50 transition-colors'
+  rounded: 'bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black rounded-full hover:shadow-lg transition-shadow font-bold',
+  square: 'bg-white border-2 border-black rounded-lg hover:bg-gray-50 transition-colors'
 }
 
 const SIZE_CLASSES = {

@@ -33,8 +33,8 @@ export default function ProductCard({
         variant={badgeVariant}
         size={variant === 'mobile' ? 'md' : 'sm'}
       />
-      <p className="text-black font-bold text-base mb-1">{product.name}</p>
-      <p className="text-black text-xs mb-3">{product.model}</p>
+      <p className="font-bold text-base mb-1">{product.name}</p>
+      <p className="text-xs mb-3">{product.model}</p>
       <div className={`relative w-full ${imageHeight} mb-3`}>
         <Image
           src={imageSrc}

@@ -72,10 +72,10 @@ export default function DailySection() {
               <SectionHeader text="日常使いで" badges={['大', '活', '躍']} />
               <div className="text-left mb-4">
                 <div className="bg-white px-2 py-1 lg:px-4 lg:py-2 inline-block">
-                  <p className="text-black text-2xl lg:text-4xl font-bold text-center font-mizolet">肌馴染みのいいフレーム</p>
+                  <p className="text-2xl lg:text-4xl font-bold text-center font-mizolet">肌馴染みのいいフレーム</p>
                 </div>
               </div>
-              <p className="text-black text-sm lg:text-md mb-6 font-noto-sans-jp py-2 px-0 leading-relaxed">
+              <p className="text-sm lg:text-md mb-6 font-noto-sans-jp py-2 px-0 leading-relaxed">
                 {descriptionText}
               </p>
             </ImageTextContent>
@@ -110,10 +110,10 @@ export default function DailySection() {
               <SectionHeader text="日常使いで" badges={['大', '活', '躍']} align="center" />
               <div className="text-center md:text-left mb-4">
                 <div className="bg-white px-2 inline-block">
-                  <p className="text-black text-2xl font-bold text-center font-mizolet">肌馴染みのいいフレーム</p>
+                  <p className="text-2xl font-bold text-center font-mizolet">肌馴染みのいいフレーム</p>
                 </div>
               </div>
-              <p className="text-black text-sm mb-6 font-noto-sans-jp py-2 px-6 md:px-0 leading-relaxed">
+              <p className="text-sm mb-6 font-noto-sans-jp py-2 px-6 md:px-0 leading-relaxed">
                 {descriptionText}
               </p>
             </ImageTextContent>

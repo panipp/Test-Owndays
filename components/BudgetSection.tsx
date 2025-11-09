@@ -71,7 +71,7 @@ export default function BudgetSection() {
                 key={index}
                 className="group bg-white border-2 border-black rounded-lg p-3 lg:p-2 flex flex-col lg:flex-row items-center lg:items-stretch justify-between hover:bg-gray-50 transition-colors min-h-[80px]"
               >
-                <span className="text-black text-md lg:text-lg text-center lg:text-left mb-2 lg:mb-0 font-mizolet font-bold flex flex-1 items-center justify-center lg:justify-center">{getFullRangeText(range)}</span>
+                <span className="text-md lg:text-lg text-center lg:text-left mb-2 lg:mb-0 font-mizolet font-bold flex flex-1 items-center justify-center lg:justify-center">{getFullRangeText(range)}</span>
                 <div className="hidden lg:flex items-center gap-4">
                   <div className="w-[2px] h-full bg-black" aria-hidden="true" />
                   <ArrowButton direction="down" size="sm" asDiv />
@@ -88,7 +88,7 @@ export default function BudgetSection() {
           <div key={rangeIndex} className="mb-16 lg:mb-20">
             <h3 className="font-bold mb-6 lg:mb-8 text-center underline decoration-black decoration-2 underline-offset-[24px]">
               <span className="text-owndays-yellow text-stroke-1-black text-2xl lg:text-3xl">{range.title}</span>
-              {range.suffix && <span className="text-black text-lg lg:text-xl">{range.suffix}</span>}
+              {range.suffix && <span className="text-lg lg:text-xl">{range.suffix}</span>}
             </h3>
 
             <div className="hidden lg:grid lg:grid-cols-4 gap-6 mt-16 my-12">
@@ -104,8 +104,8 @@ export default function BudgetSection() {
                       sizes="(max-width: 1024px) 25vw, 256px" 
                     />
                   </div>
-                  <p className="text-black font-bold text-base mb-1">{product.name}</p>
-                  <p className="text-black text-xs mb-3">{product.model}</p>
+                  <p className="font-bold text-base mb-1">{product.name}</p>
+                  <p className="text-xs mb-3">{product.model}</p>
                   <PriceDisplay price={product.price} tax={product.tax} />
                   <div className="flex justify-center mt-auto">
                     <OnlineStoreButton productName={product.name} variant="rounded" size="md" className="w-auto" />
@@ -119,14 +119,14 @@ export default function BudgetSection() {
             </div>
 
             <div className="flex justify-center">
-              <div className="hidden lg:flex group bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black text-black rounded-full px-8 py-4 items-center gap-3 hover:shadow-lg transition-shadow font-bold">
+              <div className="hidden lg:flex group bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black rounded-full px-8 py-4 items-center gap-3 hover:shadow-lg transition-shadow font-bold">
                 <span className="text-sm whitespace-nowrap">
                   {getFullRangeText(range)}の商品を見る
                 </span>
                 <ArrowButton direction="right" size="sm" onClick={() => {}} />
               </div>
               
-              <div className="lg:hidden group bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black text-black rounded-full p-2 flex items-center justify-between gap-3 hover:shadow-lg transition-shadow font-bold w-full max-w-xs">
+              <div className="lg:hidden group bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black rounded-full p-2 flex items-center justify-between gap-3 hover:shadow-lg transition-shadow font-bold w-full max-w-xs">
                 <div className="text-sm whitespace-nowrap px-6">
                   {getFullRangeText(range)}の商品を見る
                 </div>

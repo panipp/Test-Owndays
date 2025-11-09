@@ -92,12 +92,12 @@ export default function PromotionSection() {
           </div>
 
           <div className="bg-white rounded-2xl p-6 md:p-8 mb-8 md:mb-12 max-w-4xl mx-auto">
-            <div className="text-black text-base text-center font-bold mb-6 md:hidden">
+            <div className="text-base text-center font-bold mb-6 md:hidden">
               <p>例えば</p>
               <p>「12,000円」と「10,000円」の</p>
               <p>メガネをセットで購入する場合</p>
             </div>
-            <p className="hidden md:block text-black text-md lg:text-lg text-center font-bold mb-8">
+            <p className="hidden md:block text-md lg:text-lg text-center font-bold mb-8">
               例えば「12,000円」と「10,000円」のメガネをセットで購入する場合
             </p>
             
@@ -124,7 +124,7 @@ export default function PromotionSection() {
               </div>
               <div className="w-full h-8 border-t-4 border-owndays-red mb-4" />
               <div className="text-center mb-4">
-                <p className="text-black text-xl md:text-2xl font-bold mb-2">2本目半額で</p>
+                <p className="text-xl md:text-2xl font-bold mb-2">2本目半額で</p>
                 <p className="text-owndays-red font-bold flex items-center justify-center gap-1">
                   <span className="text-4xl md:text-5xl">¥5,000</span>
                   <span className="text-xl md:text-2xl">がお得に!</span>
@@ -145,20 +145,20 @@ export default function PromotionSection() {
               </div>
               <div className="border-l-4 border-owndays-red flex-shrink-0" />
               <div className="text-center flex-[3] self-center">
-                <p className="text-black text-base font-bold flex items-center justify-center gap-2">
+                <p className="text-base font-bold flex items-center justify-center gap-2">
                   <span>2本目半額で</span>
                   <span className="text-owndays-red font-bold flex items-center gap-2">
                     <span className="text-5xl">¥5,000</span>
                     <span className="text-2xl">がお得に!</span>
                   </span>
                 </p>
-                <p className="text-black text-xs md:text-sm text-center font-bold mt-2 hidden md:block">
+                <p className="text-xs md:text-sm text-center font-bold mt-2 hidden md:block">
                   ※お値段が低い商品からの割引となります。
                 </p>
               </div>
             </div>
 
-            <p className="text-black text-xs md:text-md text-center font-bold lg:hidden">
+            <p className="text-xs md:text-md text-center font-bold lg:hidden">
               ※お値段が低い商品からの割引となります。
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function PromotionSection() {
                 <p className="text-xs md:text-xl font-light font-mizolet">注意事項</p>
               </div>
               <div className="flex-1">
-                <ul className="text-black text-xs md:text-sm space-y-2">
+                <ul className="text-xs md:text-sm space-y-2">
                   <li>• 対象商品がなくなり次第終了です。</li>
                   <li>• 表示価格が低額の商品からの割引です。</li>
                   <li>• 2本目以降すべてのメガネ・サングラスが表示価格より半額となります。</li>

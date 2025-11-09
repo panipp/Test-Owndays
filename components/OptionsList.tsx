@@ -31,7 +31,7 @@ export default function OptionsList({
         <div className="flex flex-col md:flex-row md:items-center md:gap-12 lg:items-center">
           <div className="md:w-1/3 flex-shrink-0 justify-items-center">
             <SpeechBubble label={speechBubbleLabel} arrowPosition="right" align="left" className="mb-1" textColor="black" />
-            <p className="text-black text-2xl lg:text-3xl font-bold mb-12 md:mb-0 font-mizolet">{title}</p>
+            <p className="text-2xl lg:text-3xl font-bold mb-12 md:mb-0 font-mizolet">{title}</p>
           </div>
           
           <div className="flex-1">
@@ -39,9 +39,9 @@ export default function OptionsList({
               {options.map((option) => (
                 <div key={option.id} className="group bg-white rounded-lg px-6 py-2 flex items-stretch justify-between gap-4 border-t-2 border-l-2 border-r-2 border-b-[4px] border-black hover:shadow-lg transition-shadow font-mizolet lg:flex-1">
                   <div className="flex-1 text-left my-2 leading-[2rem]">
-                    <p className="text-black font-bold text-md mb-1">{option.title}</p>
-                    <p className="text-black text-xs mb-1 leading-relaxed">{option.description}</p>
-                    <p className="text-black font-bold">
+                    <p className="font-bold text-md mb-1">{option.title}</p>
+                    <p className="text-xs mb-1 leading-relaxed">{option.description}</p>
+                    <p className="font-bold">
                       <span className="text-xl">{option.price}</span>
                       <span className="text-sm ml-1">{option.tax}</span>
                     </p>

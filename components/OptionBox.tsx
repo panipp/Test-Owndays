@@ -27,7 +27,7 @@ export default function OptionBox({
         className={`group flex-1 h-full ${BASE_BUTTON_CLASSES} px-6 py-2 flex items-center justify-between gap-4 ${BORDER_CLASSES} text-left ${className}`}
         aria-label={`${text}を選択`}
       >
-        <span className="text-black text-base flex-1 text-center">{text}</span>
+        <span className="text-base flex-1 text-center">{text}</span>
         <div className="flex items-center gap-4 h-full">
           <div className="w-[2px] h-full bg-black" aria-hidden="true" />
           <ArrowButton direction="down" size="sm" asDiv />
@@ -42,7 +42,7 @@ export default function OptionBox({
       className={`${BASE_BUTTON_CLASSES} p-4 flex flex-col items-center justify-center ${BORDER_CLASSES} ${className}`}
       aria-label={`${text}を選択`}
     >
-      <span className={`text-black text-sm text-center mb-3 ${textWrapClass}`}>{text}</span>
+      <span className={`text-sm text-center mb-3 ${textWrapClass}`}>{text}</span>
       <ArrowButton direction="down" size="sm" asDiv />
     </button>
   )

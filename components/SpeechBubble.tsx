@@ -17,7 +17,7 @@ const ALIGN_CLASSES = {
 const BORDER_CLASSES = 'border-t-2 border-l-2 border-r-2 border-b-4 border-black'
 const TEXT_COLOR_CLASSES = {
   red: 'text-owndays-red',
-  black: 'text-black'
+  black: ''
 }
 
 export default function SpeechBubble({

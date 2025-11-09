@@ -35,12 +35,12 @@ export default function SectionHeader({
     return (
       <div className={className}>
         <div className="mb-4 font-mizolet font-bold">
-          <p className={`text-black text-xl ${align === 'center' ? 'text-center md:text-left' : 'text-left'}`}>
+          <p className={`text-xl ${align === 'center' ? 'text-center md:text-left' : 'text-left'}`}>
             {textArray[0]}
           </p>
           <div className={`flex items-center gap-1 ${alignClass}`}>
             {textArray.slice(1).map((t, index) => (
-              <p key={index} className="text-black text-xl">{t}</p>
+              <p key={index} className="text-xl">{t}</p>
             ))}
             {badges.map((badge, index) => (
               <CircularBadge key={index}>{badge}</CircularBadge>
@@ -56,7 +56,7 @@ export default function SectionHeader({
       <div className="mb-4 font-mizolet font-bold">
         <div className={`flex items-center gap-1 flex-wrap ${alignClass}`}>
           {textArray.map((t, index) => (
-            <p key={index} className="text-black text-xl">{t}</p>
+            <p key={index} className="text-xl">{t}</p>
           ))}
           {badges.map((badge, index) => (
             <CircularBadge key={index}>{badge}</CircularBadge>
