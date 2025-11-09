@@ -2,10 +2,11 @@ import NavBar from '@/components/NavBar'
 import PromotionSection from '@/components/PromotionSection'
 import PickUpSection from '@/components/PickUpSection'
 import FamilySection from '@/components/FamilySection'
+import DailySection from '@/components/DailySection'
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen max-w-[1920px] mx-auto w-full">
       <NavBar />
       <main className="flex-grow">
         {/* Promotional Section */}
@@ -16,6 +17,9 @@ export default function Home() {
         
         {/* FAMILY Section */}
         <FamilySection />
+        
+        {/* DAILY Section */}
+        <DailySection />
       </main>
     </div>
   )
