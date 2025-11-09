@@ -1,26 +1,16 @@
-import React from 'react'
 import Image from 'next/image'
 import FavoriteButton from './FavoriteButton'
 import CategoryBadge from './CategoryBadge'
 import PriceDisplay from './PriceDisplay'
 import OnlineStoreButton from './OnlineStoreButton'
-
-interface Product {
-  id: number | string
-  name: string
-  model: string
-  price: string
-  tax: string
-  category: string
-  image: string
-  imageMobile?: string
-}
+import { Product, BadgeVariant, ButtonVariant, Variant } from '@/lib/types'
 
 interface ProductCardProps {
   product: Product
-  variant?: 'desktop' | 'mobile'
+  variant?: Variant
   showFavorite?: boolean
-  buttonVariant?: 'rounded' | 'square'
+  buttonVariant?: ButtonVariant
+  badgeVariant?: BadgeVariant
   className?: string
 }
 
@@ -29,6 +19,7 @@ export default function ProductCard({
   variant = 'desktop',
   showFavorite = true,
   buttonVariant = 'rounded',
+  badgeVariant = 'green',
   className = ''
 }: ProductCardProps) {
   const imageSrc = variant === 'mobile' && product.imageMobile ? product.imageMobile : product.image
@@ -40,7 +31,7 @@ export default function ProductCard({
     <div className={`p-4 ${className} md:text-center`}>
       <CategoryBadge
         category={product.category}
-        variant="green"
+        variant={badgeVariant}
         size={variant === 'mobile' ? 'md' : 'sm'}
       />
       <p className="text-black font-bold text-base mb-1">{product.name}</p>

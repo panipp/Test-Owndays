@@ -1,4 +1,3 @@
-import React from 'react'
 
 interface CategoryBadgeProps {
   category: string
@@ -9,7 +8,7 @@ interface CategoryBadgeProps {
 
 const VARIANT_CLASSES = {
   green: 'bg-owndays-green-2 text-white',
-  brown: 'bg-owndays-brown-1 text-white'
+  brown: 'bg-owndays-brown-2 text-white'
 }
 
 const SIZE_CLASSES = {

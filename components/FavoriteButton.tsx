@@ -34,8 +34,12 @@ export default function FavoriteButton({
         ${sizeClasses[size]}
         transition-all
         duration-200
+        outline-none
         focus:outline-none
+        focus:ring-0
+        focus:ring-offset-0
         active:scale-95
+        active:outline-none
         p-0
         group
         ${className}

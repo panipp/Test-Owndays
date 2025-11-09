@@ -1,6 +1,6 @@
-import React from 'react'
 import SpeechBubble from './SpeechBubble'
 import ArrowButton from './ArrowButton'
+import FullWidthSection from './FullWidthSection'
 
 interface Option {
   id: number | string
@@ -26,7 +26,7 @@ export default function OptionsList({
   className = ''
 }: OptionsListProps) {
   return (
-    <div className={`mb-16 md:mb-20 w-screen ${backgroundColor} py-16 lg:py-24 ${className}`} style={{ marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}>
+    <FullWidthSection backgroundColor={backgroundColor} className={className} py="py-16 lg:py-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row md:items-center md:gap-12 lg:items-center">
           <div className="md:w-1/3 flex-shrink-0 md:justify-items-center">
@@ -56,6 +56,6 @@ export default function OptionsList({
           </div>
         </div>
       </div>
-    </div>
+    </FullWidthSection>
   )
 }

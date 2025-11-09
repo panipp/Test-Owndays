@@ -1,4 +1,3 @@
-import React from 'react'
 import ArrowButton from './ArrowButton'
 
 interface OptionBoxProps {

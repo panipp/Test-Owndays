@@ -29,6 +29,9 @@ module.exports = {
         'owndays-brown': '#D4C4B0', // Light brown for sections
         'owndays-favorite-green': '#22C55E', // Green for favorited items
       },
+      textStroke: {
+        '2-black': '2px black',
+      },
     },
   },
   plugins: [],

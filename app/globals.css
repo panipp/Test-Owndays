@@ -20,5 +20,18 @@
   .font-yu-gothic {
     font-family: yu-gothic-pr6n, sans-serif;
   }
+  
+  .text-stroke-2-black {
+    -webkit-text-stroke: 2px black;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 

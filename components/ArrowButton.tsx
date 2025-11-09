@@ -1,7 +1,7 @@
 'use client'
 
-import React from 'react'
 import { FaArrowRight, FaArrowLeft, FaArrowDown, FaArrowUp } from 'react-icons/fa'
+import { joinClasses } from '@/lib/utils'
 
 interface ArrowButtonProps {
   direction?: 'left' | 'right' | 'down' | 'up'
@@ -10,6 +10,7 @@ interface ArrowButtonProps {
   size?: 'sm' | 'md' | 'lg'
   variant?: 'rounded' | 'circle'
   asDiv?: boolean
+  colorVariant?: 'black' | 'white'
 }
 
 const SIZE_CLASSES = {
@@ -43,16 +44,23 @@ export default function ArrowButton({
   className = '',
   size = 'md',
   variant = 'circle',
-  asDiv = false
+  asDiv = false,
+  colorVariant = 'black'
 }: ArrowButtonProps) {
-  const baseClasses = [
+  const colorClasses = colorVariant === 'white' 
+    ? 'bg-white text-black border-2 border-black hover:bg-gray-100'
+    : 'bg-black text-white'
+  
+  const baseClasses = joinClasses(
     SIZE_CLASSES[size],
     variant === 'circle' ? 'rounded-full' : 'rounded-lg',
-    'bg-black text-white flex items-center justify-center',
+    colorClasses,
+    'flex items-center justify-center',
     'transition-all duration-200',
-    asDiv ? 'group-hover:bg-owndays-dark-green' : 'hover:bg-owndays-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-owndays-dark-green active:scale-95',
+    'cursor-pointer',
+    asDiv ? 'group-hover:bg-owndays-dark-green' : colorVariant === 'black' ? 'hover:bg-owndays-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-owndays-dark-green active:scale-95' : 'focus:outline-none active:scale-95',
     className
-  ].filter(Boolean).join(' ')
+  )
 
   if (asDiv) {
     return (
