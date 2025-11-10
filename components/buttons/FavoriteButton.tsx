@@ -3,15 +3,11 @@
 import React, { useState } from 'react'
 
 interface FavoriteButtonProps {
-  productId: string | number
   className?: string
-  size?: 'sm' | 'md' | 'lg'
 }
 
 export default function FavoriteButton({ 
-  productId, 
-  className = '',
-  size = 'md'
+  className = ''
 }: FavoriteButtonProps) {
   const [isFavorited, setIsFavorited] = useState(false)
 
@@ -21,17 +17,11 @@ export default function FavoriteButton({
     setIsFavorited(!isFavorited)
   }
 
-  const sizeClasses = {
-    sm: 'w-8 h-8',
-    md: 'w-10 h-10',
-    lg: 'w-12 h-12',
-  }
-
   return (
     <button
       onClick={handleClick}
       className={`
-        ${sizeClasses[size]}
+        w-8 h-8
         transition-all
         duration-200
         outline-none

@@ -5,7 +5,7 @@ interface SpeechBubbleArrowProps {
   variant?: 'desktop' | 'mobile'
 }
 
-const ARROW_POSITIONS = {
+const arrowPositions = {
   desktop: {
     left: 'left-1/4',
     center: 'left-1/2',
@@ -18,15 +18,15 @@ const ARROW_POSITIONS = {
   }
 }
 
-const TRANSLATE_CLASSES = {
+const translateClasses = {
   center: '-translate-x-1/2',
   right: 'translate-x-1/2',
   left: '-translate-x-1/2'
 }
 
 export default function SpeechBubbleArrow({ position, variant = 'desktop' }: SpeechBubbleArrowProps) {
-  const positionClass = ARROW_POSITIONS[variant][position]
-  const translateClass = TRANSLATE_CLASSES[position]
+  const positionClass = arrowPositions[variant][position]
+  const translateClass = translateClasses[position]
   const displayClass = variant === 'desktop' ? 'hidden lg:block' : 'lg:hidden'
 
   return (

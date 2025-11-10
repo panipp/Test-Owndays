@@ -1,11 +1,10 @@
 import ProductCard from '@/components/products/ProductCard'
 import { Product } from '@/lib/types'
-import { BadgeVariant, ButtonVariant, Variant } from '@/lib/types'
+import { BadgeVariant, Variant } from '@/lib/types'
 
 interface ProductGridProps {
   products: Product[]
   variant?: Variant
-  buttonVariant?: ButtonVariant
   badgeVariant?: BadgeVariant
   className?: string
   gridClassName?: string
@@ -14,7 +13,6 @@ interface ProductGridProps {
 export default function ProductGrid({
   products,
   variant = 'desktop',
-  buttonVariant = 'rounded',
   badgeVariant = 'green',
   className = '',
   gridClassName = ''
@@ -35,7 +33,6 @@ export default function ProductGrid({
             key={product.id}
             product={product}
             variant={variant}
-            buttonVariant={buttonVariant}
             badgeVariant={badgeVariant}
           />
         ))}

@@ -10,8 +10,8 @@ interface OptionBoxProps {
   className?: string
 }
 
-const BORDER_CLASSES = 'border-t-2 border-l-2 border-r-2 border-b-[4px] border-black'
-const BASE_BUTTON_CLASSES = 'bg-white rounded-lg hover:shadow-lg transition-shadow font-mizolet'
+const borderClasses = 'border-t-2 border-l-2 border-r-2 border-b-[4px] border-black'
+const baseButtonClasses = 'bg-white rounded-lg hover:shadow-lg transition-shadow font-mizolet'
 
 export default function OptionBox({
   text,
@@ -28,10 +28,10 @@ export default function OptionBox({
         onClick={onClick}
         className={joinClasses(
           'group flex-1 h-full',
-          BASE_BUTTON_CLASSES,
+          baseButtonClasses,
           'px-6 py-2 flex items-center justify-between gap-4',
-          BORDER_CLASSES,
-          'text-left',
+          borderClasses,
+          'text-left cursor-default',
           className
         )}
         aria-label={onClick ? `${text}を選択` : text}
@@ -49,9 +49,10 @@ export default function OptionBox({
     <button
       onClick={onClick}
       className={joinClasses(
-        BASE_BUTTON_CLASSES,
+        baseButtonClasses,
         'p-4 flex flex-col items-center justify-center',
-        BORDER_CLASSES,
+        borderClasses,
+        'cursor-default',
         className
       )}
       aria-label={onClick ? `${text}を選択` : text}

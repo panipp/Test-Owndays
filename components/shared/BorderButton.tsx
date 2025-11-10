@@ -12,18 +12,18 @@ interface BorderButtonProps {
   className?: string
 }
 
-const VARIANT_CLASSES = {
+const variantClasses = {
   rounded: 'rounded-full',
   square: 'rounded-lg'
 }
 
-const SIZE_CLASSES = {
+const sizeClasses = {
   sm: 'px-4 py-2 text-xs',
   md: 'px-6 py-3 text-sm',
   lg: 'px-8 py-4 text-base'
 }
 
-const BORDER_CLASSES = 'border-t-2 border-l-2 border-r-2 border-b-[4px] border-black'
+const borderClasses = 'border-t-2 border-l-2 border-r-2 border-b-[4px] border-black'
 
 export default function BorderButton({
   children,
@@ -36,9 +36,9 @@ export default function BorderButton({
 }: BorderButtonProps) {
   const baseClasses = joinClasses(
     'group bg-white',
-    BORDER_CLASSES,
-    VARIANT_CLASSES[variant],
-    SIZE_CLASSES[size],
+    borderClasses,
+    variantClasses[variant],
+    sizeClasses[size],
     'flex items-center gap-3',
     'hover:shadow-lg transition-shadow font-bold',
     className

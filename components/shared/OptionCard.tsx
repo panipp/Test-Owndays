@@ -8,15 +8,15 @@ interface OptionCardProps {
   className?: string
 }
 
-const BORDER_CLASSES = 'border-t-2 border-l-2 border-r-2 border-b-[4px] border-black'
+const borderClasses = 'border-t-2 border-l-2 border-r-2 border-b-[4px] border-black'
 
 export default function OptionCard({ option, className = '' }: OptionCardProps) {
   return (
     <div 
       className={joinClasses(
-        'group bg-white rounded-lg px-6 py-2',
+        'bg-white rounded-lg px-6 py-2',
         'flex items-stretch justify-between gap-4',
-        BORDER_CLASSES,
+        borderClasses,
         'hover:shadow-lg transition-shadow font-mizolet lg:flex-1',
         className
       )}

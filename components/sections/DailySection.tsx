@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import ProductGrid from '@/components/products/ProductGrid'
 import OptionsList from '@/components/shared/OptionsList'
 import FullWidthSection from '@/components/sections/FullWidthSection'
@@ -83,7 +82,6 @@ export default function DailySection() {
             <ProductGrid 
               products={products}
               variant="desktop"
-              buttonVariant="rounded"
               badgeVariant="brown"
             />
           </div>
@@ -120,7 +118,6 @@ export default function DailySection() {
             <ProductGrid 
               products={products}
               variant="mobile"
-              buttonVariant="rounded"
               badgeVariant="brown"
             />
           </div>

@@ -70,7 +70,7 @@ export default function BudgetSection() {
             {priceRanges.map((range, index) => (
               <button
                 key={index}
-                className="group bg-white border-2 border-black rounded-lg p-3 lg:p-2 flex flex-col lg:flex-row items-center lg:items-stretch justify-between hover:bg-gray-50 transition-colors min-h-[80px]"
+                className="group bg-white border-2 border-black rounded-lg p-3 lg:py-2 lg:px-4 flex flex-col lg:flex-row items-center lg:items-stretch justify-between hover:bg-gray-50 transition-colors min-h-[80px] cursor-default"
               >
                 <span className="text-md lg:text-lg text-center lg:text-left mb-2 lg:mb-0 font-mizolet font-bold flex flex-1 items-center justify-center lg:justify-center">{getFullRangeText(range)}</span>
                 <div className="hidden lg:flex items-center gap-4">
@@ -105,11 +105,11 @@ export default function BudgetSection() {
                       sizes="(max-width: 1024px) 25vw, 256px" 
                     />
                   </div>
-                  <p className="text-black font-bold text-base mb-1">{product.name}</p>
-                  <p className="text-black text-xs mb-3">{product.model}</p>
+                  <p className="font-bold text-base mb-1">{product.name}</p>
+                  <p className="text-xs mb-3">{product.model}</p>
                   <PriceDisplay price={product.price} tax={product.tax} />
                   <div className="flex justify-center mt-auto">
-                    <OnlineStoreButton productName={product.name} variant="rounded" size="md" />
+                    <OnlineStoreButton productName={product.name} />
                   </div>
                 </div>
               ))}
@@ -124,14 +124,14 @@ export default function BudgetSection() {
                 <span className="text-sm whitespace-nowrap pl-6">
                 {getFullRangeText(range)}の商品を見る
                 </span>
-                <ArrowButton direction="right" size="sm" onClick={() => {}} />
+                <ArrowButton direction="right" size="sm" />
               </div>
               
               <div className="lg:hidden group bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black rounded-full p-2 flex items-center justify-between gap-3 hover:shadow-lg transition-shadow font-bold w-full max-w-xs">
                 <div className="text-sm whitespace-nowrap px-6">
                   {getFullRangeText(range)}の商品を見る
                 </div>
-                <ArrowButton direction="right" size="sm" onClick={() => {}} />
+                <ArrowButton direction="right" size="sm" />
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function ProductCarouselCard({ product }: ProductCarouselCardProp
       <p className="text-xs mb-3">{product.model}</p>
       <PriceDisplay price={product.price} tax={product.tax} />
       <div className="flex justify-center">
-        <OnlineStoreButton productName={product.name} variant="rounded" size="md" />
+        <OnlineStoreButton productName={product.name} />
       </div>
     </div>
   )

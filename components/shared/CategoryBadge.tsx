@@ -6,12 +6,12 @@ interface CategoryBadgeProps {
   className?: string
 }
 
-const VARIANT_CLASSES = {
+const variantClasses = {
   green: 'bg-owndays-green-2 text-white',
   brown: 'bg-owndays-brown-2 text-white'
 }
 
-const SIZE_CLASSES = {
+const sizeClasses = {
   sm: 'text-xs px-2 py-1',
   md: 'text-xs px-6 py-1.5'
 }
@@ -23,7 +23,7 @@ export default function CategoryBadge({
   className = ''
 }: CategoryBadgeProps) {
   return (
-    <div className={`${VARIANT_CLASSES[variant]} font-bold ${SIZE_CLASSES[size]} rounded-full mb-2 inline-block ${className}`}>
+    <div className={`${variantClasses[variant]} font-bold ${sizeClasses[size]} rounded-full mb-2 inline-block ${className}`}>
       {category}
     </div>
   )

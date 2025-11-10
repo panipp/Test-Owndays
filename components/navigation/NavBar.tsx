@@ -8,7 +8,6 @@ export default function NavBar() {
 
   return (
     <header className="w-full bg-white sticky top-0 z-50">
-      {/* Desktop Navigation */}
       <nav className="hidden lg:block">
         <div className="bg-gray-800 py-2">
           <div className="container mx-auto px-4 xl:px-8">
@@ -22,7 +21,6 @@ export default function NavBar() {
           <div className="container mx-auto px-4 xl:px-8">
             <div className="flex items-center justify-between h-20">
               <div className="flex items-center space-x-8">
-                {/* Logo */}
                 <div className="flex-shrink-0">
                   <a href="/" className="block relative w-32 h-10">
                     <Image
@@ -105,7 +103,6 @@ export default function NavBar() {
         </div>
       </nav>
 
-      {/* Mobile Navigation */}
       <nav className="lg:hidden">
         <div className="px-4 py-3 flex items-center justify-between bg-white border-b border-gray-200">
           <button className="p-2 hover:bg-gray-100 rounded-full transition-colors relative" aria-label="ショッピングカート">

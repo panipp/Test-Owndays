@@ -85,7 +85,6 @@ export default function FamilySection() {
             <ProductGrid 
               products={products}
               variant="desktop"
-              buttonVariant="rounded"
             />
           </div>
         </FullWidthSection>
@@ -142,7 +141,6 @@ export default function FamilySection() {
             <ProductGrid 
               products={products}
               variant="mobile"
-              buttonVariant="rounded"
             />
           </div>
         </FullWidthSection>

@@ -6,7 +6,6 @@ import { joinClasses } from '@/lib/utils'
 interface ArrowButtonProps {
   direction?: 'left' | 'right' | 'down' | 'up'
   onClick?: () => void
-  className?: string
   size?: 'sm' | 'md' | 'lg'
   variant?: 'rounded' | 'circle'
   asDiv?: boolean
@@ -14,19 +13,19 @@ interface ArrowButtonProps {
   ariaLabel?: string
 }
 
-const SIZE_CLASSES = {
+const sizeClasses = {
   sm: 'w-8 h-8',
   md: 'w-10 h-10',
   lg: 'w-12 h-12',
 }
 
-const ICON_SIZE = {
+const iconSizes = {
   sm: 12,
   md: 16,
   lg: 20,
 }
 
-const ARROW_ICONS = {
+const arrowIcons = {
   right: FaArrowRight,
   left: FaArrowLeft,
   down: FaArrowDown,
@@ -34,15 +33,14 @@ const ARROW_ICONS = {
 }
 
 function ArrowIcon({ direction, size = 'md' }: { direction: 'left' | 'right' | 'down' | 'up', size?: 'sm' | 'md' | 'lg' }) {
-  const iconSize = ICON_SIZE[size]
-  const IconComponent = ARROW_ICONS[direction]
-  return <IconComponent size={iconSize} />
+  const iconSizeValue = iconSizes[size]
+  const IconComponent = arrowIcons[direction]
+  return <IconComponent size={iconSizeValue} />
 }
 
 export default function ArrowButton({
   direction = 'right',
   onClick,
-  className = '',
   size = 'md',
   variant = 'circle',
   asDiv = false,
@@ -54,14 +52,13 @@ export default function ArrowButton({
     : 'bg-black text-white'
   
   const baseClasses = joinClasses(
-    SIZE_CLASSES[size],
+    sizeClasses[size],
     variant === 'circle' ? 'rounded-full' : 'rounded-lg',
     colorClasses,
     'flex items-center justify-center',
     'transition-all duration-200',
     'cursor-pointer',
-    asDiv ? 'group-hover:bg-owndays-dark-green' : colorVariant === 'black' ? 'hover:bg-owndays-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-owndays-dark-green active:scale-95' : 'focus:outline-none active:scale-95',
-    className
+    asDiv ? 'hover:bg-owndays-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-owndays-dark-green active:scale-95' : colorVariant === 'black' ? 'hover:bg-owndays-dark-green focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-owndays-dark-green active:scale-95' : 'focus:outline-none active:scale-95'
   )
 
   const directionLabels = {
