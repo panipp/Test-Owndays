@@ -66,8 +66,4 @@ public/
 
 - **Custom Colors**: OWNDAYS brand colors in `tailwind.config.js`
 - **Custom Fonts**: Local fonts (Outfit, Noto Sans JP) + Adobe Typekit
-- **Breakpoints**: 
-  - Mobile: default
-  - Tablet: `md:` (768px+)
-  - Desktop: `lg:` (1024px+)
-  - Large: `xl:` (1280px+)
+- **Responsive Breakpoints**: Using Tailwind CSS default viewport-based breakpoints
