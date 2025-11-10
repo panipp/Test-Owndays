@@ -1,4 +1,3 @@
-
 interface OnlineStoreButtonProps {
   productName?: string
   variant?: 'rounded' | 'square'

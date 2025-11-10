@@ -43,14 +43,21 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
   const translatePercentage = 100
 
   return (
-    <div className="relative">
+    <div 
+      className="relative" 
+      role="region" 
+      aria-label="商品カルーセル"
+    >
       <div className="relative overflow-hidden">
         <div 
           className="flex transition-transform duration-300 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * translatePercentage}%)` }}
+          role="list"
+          aria-live="polite"
+          aria-atomic="false"
         >
           {products.map((product) => (
-            <div key={product.id} className="flex-shrink-0 w-full md:w-1/2 px-2 md:px-4">
+            <div key={product.id} className="flex-shrink-0 w-full md:w-1/2 px-2 md:px-4" role="listitem">
               <div className="bg-white rounded-lg p-4 relative font-outfit text-center">
                 <div className="relative w-full h-48 mb-4">
                   <Image 
@@ -81,6 +88,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
                 onClick={goToPrevious}
                 size="md"
                 colorVariant="white"
+                aria-label={`前の商品へ (${currentIndex + 1} / ${totalSlides})`}
               />
             </div>
             <div className="absolute top-1/2 -translate-y-1/2 right-0 z-10">
@@ -89,6 +97,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
                 onClick={goToNext}
                 size="md"
                 colorVariant="white"
+                aria-label={`次の商品へ (${currentIndex + 1} / ${totalSlides})`}
               />
             </div>
           </>

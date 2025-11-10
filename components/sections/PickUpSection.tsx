@@ -23,11 +23,11 @@ function PurposeSection({ variant }: { variant: 'desktop' | 'mobile' }) {
 
 export default function PickUpSection() {
   return (
-    <section className="w-full lg:w-3/4 mx-auto my-16 lg:my-24 bg-white" aria-label="おすすめ商品セクション">
+    <section className="w-full lg:w-3/4 mx-auto my-16 lg:my-24 bg-white" aria-labelledby="pickup-section-title">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="hidden lg:block">
           <div className="flex items-stretch gap-16 xl:gap-32 mb-6">
-            <SectionTitle title="PICK UP" subtitle="おすすめアイテム" variant="desktop" />
+            <SectionTitle title="PICK UP" subtitle="おすすめアイテム" variant="desktop" id="pickup-section-title" />
             <div className="flex items-stretch gap-6 flex-1">
               {OPTIONS.slice(0, 2).map((option) => (
                 <OptionBox
@@ -42,7 +42,7 @@ export default function PickUpSection() {
         </div>
 
         <div className="lg:hidden">
-          <SectionTitle title="PICK UP" subtitle="おすすめアイテム" variant="mobile" />
+          <SectionTitle title="PICK UP" subtitle="おすすめアイテム" variant="mobile" id="pickup-section-title" />
           
           <div className="grid grid-cols-2 gap-4 mb-4">
             {OPTIONS.slice(0, 2).map((option) => (

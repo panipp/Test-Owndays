@@ -1,8 +1,10 @@
 import ResponsiveImage from '@/components/common/ResponsiveImage'
+import SectionTitle from '@/components/common/SectionTitle'
 
 export default function PromotionSection() {
   return (
-    <section className="w-full bg-white relative overflow-hidden">
+    <section className="w-full bg-white relative overflow-hidden" aria-labelledby="promotion-heading">
+      <h1 id="promotion-heading" className="sr-only">OWNDAYS 2本目半額キャンペーン</h1>
       <div className="container mx-auto p-6 lg:p-8">
         <div className="bg-owndays-red rounded-2xl md:rounded-3xl p-6 md:p-12">
           <div className="mx-auto">
@@ -14,7 +16,6 @@ export default function PromotionSection() {
                   alt="キャンペーン期間: 2024年12月22日まで"
                   width={400}
                   height={600}
-                  priority
                   className="lg:px-8 lg:py-4 min-w-0"
                 />
                 <ResponsiveImage
@@ -23,7 +24,6 @@ export default function PromotionSection() {
                   alt="OWNDAYS メガネアイコン"
                   width={400}
                   height={600}
-                  priority
                   className="min-w-0"
                 />
               </div>
@@ -35,7 +35,6 @@ export default function PromotionSection() {
                   alt="キャンペーン期間: 2024年12月22日まで"
                   width={400}
                   height={600}
-                  priority
                   className="px-8 py-4"
                 />
                 <ResponsiveImage
@@ -44,7 +43,6 @@ export default function PromotionSection() {
                   alt="OWNDAYS メガネアイコン"
                   width={400}
                   height={600}
-                  priority
                 />
               </div>
             </div>
@@ -56,7 +54,7 @@ export default function PromotionSection() {
                 alt="2本同時購入で 2本目半額！"
                 width={800}
                 height={200}
-                className="mb-6 md:mb-0 md:w-1/2 lg:w-full max-w-2xl mx-auto md:my-8"
+                className="mb-6 md:mb-0 md:w-1/2 lg:w-full max-w-sm xl:max-w-lg mx-auto md:my-8"
               />
             <div className="md:hidden text-center text-lg m-4">
               <p className="text-white mb-2">まとめ買いがオトク!</p>
@@ -66,7 +64,7 @@ export default function PromotionSection() {
                 2本目以降半額。
               </span>
             </div>
-            <div className="hidden md:block text-center mb-4">
+            <div className="hidden md:block text-center mb-4 mt-10">
               <p className="text-white text-lg mb-2">まとめ買いがオトク!</p>
               <p className="text-white text-base mb-2">
                 家族・友達や恋人、自分買いでも複数本購入で、<span className="bg-owndays-dark-green text-white px-2">2本目以降半額。</span>
@@ -141,14 +139,12 @@ export default function PromotionSection() {
 
           <div className="bg-white rounded-2xl p-6 md:p-8 max-w-4xl mx-auto font-bold">
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-16">
-                <div className="flex-shrink-0 text-center md:text-left self-center">
-                <h2 
-                  className="text-4xl md:text-6xl text-owndays-red font-outfit mb-2 tracking-[0.15em] md:tracking-[0.1em] text-shadow-outline"
-                >
-                  NOTE
-                </h2>
-                <p className="text-xs md:text-xl font-light font-mizolet">注意事項</p>
-              </div>
+                <SectionTitle 
+                  title="NOTE" 
+                  subtitle="注意事項" 
+                  variant="desktop"
+                  className="flex-shrink-0"
+                />
               <div className="flex-1">
                 <ul className="text-xs md:text-sm space-y-2">
                   <li>• 対象商品がなくなり次第終了です。</li>

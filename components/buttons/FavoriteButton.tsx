@@ -44,7 +44,7 @@ export default function FavoriteButton({
         group
         ${className}
       `}
-      aria-label={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
+      aria-label={isFavorited ? 'お気に入りから削除' : 'お気に入りに追加'}
       aria-pressed={isFavorited}
     >
       <svg

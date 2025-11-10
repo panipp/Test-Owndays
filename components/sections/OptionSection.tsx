@@ -49,10 +49,12 @@ export default function OptionSection() {
 
   return (
     <section className="w-full bg-gray-200 pt-8 pb-20 lg:pt-16 lg:pb-32 z-10 relative">
-      <div className="absolute top-0 left-0 right-0 flex justify-center z-20">
-        <h2 className="text-4xl lg:text-5xl font-bold text-owndays-red font-outfit tracking-[0.15em] lg:tracking-[0.1em] -translate-y-1/2 [text-shadow:-2px_-2px_0_black,2px_-2px_0_black,-2px_2px_0_black,2px_2px_0_black,-2px_0_0_black,2px_0_0_black,0_-2px_0_black,0_2px_0_black]">
-          OPTION
-        </h2>
+      <div className="absolute top-0 left-0 right-0 flex justify-center z-20 -translate-y-1/2">
+        <div className="text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold text-owndays-red font-outfit tracking-[0.15em] lg:tracking-[0.1em] text-shadow-outline">
+            OPTION
+          </h2>
+        </div>
       </div>
       <div className="absolute top-0 left-0 right-0 flex justify-center z-20 translate-y-[calc(50%+1rem)] lg:translate-y-[calc(50%+2rem)]">
         <p className="text-base lg:text-lg font-mizolet font-bold">おすすめオプションレンズ</p>
