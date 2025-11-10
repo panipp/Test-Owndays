@@ -9,6 +9,7 @@ interface ImageTextContentProps {
   children: ReactNode
   imageClassName?: string
   contentClassName?: string
+  unoptimized?: boolean
 }
 
 export default function ImageTextContent({
@@ -18,7 +19,8 @@ export default function ImageTextContent({
   variant = 'desktop',
   children,
   imageClassName = '',
-  contentClassName = ''
+  contentClassName = '',
+  unoptimized = false
 }: ImageTextContentProps) {
   const isMobile = variant === 'mobile'
   const imageWidth = isMobile ? 800 : undefined
@@ -35,6 +37,7 @@ export default function ImageTextContent({
             height={imageHeight}
             className="w-full h-full object-contain"
             loading="lazy"
+            unoptimized={unoptimized}
           />
         ) : (
           <Image
@@ -44,6 +47,7 @@ export default function ImageTextContent({
             className="object-contain"
             loading="lazy"
             sizes="(max-width: 1024px) 100vw, 512px"
+            unoptimized={unoptimized}
           />
         )}
       </div>

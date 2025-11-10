@@ -69,7 +69,9 @@ export default function FamilySection() {
             <ImageTextContent
               imageSrc="/images/Section3/Frame.png"
               imageAlt="家族でメガネを選ぶイラスト - 両親と子供がメガネをかけている様子"
+              imageMobileSrc="/images/Section3/Frame-1x.png"
               variant="desktop"
+              unoptimized
             >
               <SectionHeader text={['小さなお子様がいる', '家庭でも']} badges={['安', '心']} />
               <div className="text-left mb-4">
@@ -138,6 +140,7 @@ export default function FamilySection() {
               imageAlt="家族でメガネを選ぶイラスト - 両親と子供がメガネをかけている様子"
               imageMobileSrc="/images/Section3/Frame-1x.png"
               variant="mobile"
+              unoptimized
             >
               <SectionHeader 
                 text={['小さなお子様がいる', '家庭でも']} 
