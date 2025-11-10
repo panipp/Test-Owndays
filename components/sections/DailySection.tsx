@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import ProductGrid from '@/components/products/ProductGrid'
-import OptionsList from '@/components/common/OptionsList'
+import OptionsList from '@/components/shared/OptionsList'
 import FullWidthSection from '@/components/sections/FullWidthSection'
-import SectionHeader from '@/components/common/SectionHeader'
-import ImageTextContent from '@/components/common/ImageTextContent'
+import SectionHeader from '@/components/shared/SectionHeader'
+import ImageTextContent from '@/components/shared/ImageTextContent'
 import { Product, Option } from '@/lib/types'
 
 export default function DailySection() {
@@ -15,8 +15,8 @@ export default function DailySection() {
       price: '¥20,000',
       tax: '税込',
       category: 'GLASSES',
-      image: '/images/Section4/JD1045Z-4A_C2.png',
-      imageMobile: '/images/Section4/JD1045Z-4A_C2-1x.png'
+      image: '/images/Section4/product1.png',
+      imageMobile: '/images/Section4/product1-1x.png'
     },
     { 
       id: 2, 
@@ -25,8 +25,8 @@ export default function DailySection() {
       price: '¥8,000',
       tax: '税込',
       category: 'GLASSES',
-      image: '/images/Section4/FC2035V-4A_C2.png',
-      imageMobile: '/images/Section4/FC2035V-4A_C2-1x.png'
+      image: '/images/Section4/product2.png',
+      imageMobile: '/images/Section4/product2-1x.png'
     },
     { 
       id: 3, 
@@ -35,8 +35,8 @@ export default function DailySection() {
       price: '¥10,000',
       tax: '税込',
       category: 'GLASSES',
-      image: '/images/Section4/GB1043G-4A_C1.png',
-      imageMobile: '/images/Section4/GB1043G-4A_C1-1x.png'
+      image: '/images/Section4/product3.png',
+      imageMobile: '/images/Section4/product3-1x.png'
     },
   ]
 
@@ -65,7 +65,7 @@ export default function DailySection() {
         <FullWidthSection backgroundColor="bg-owndays-brown-4">
           <div className="container mx-auto px-6 lg:px-8 relative z-10">
             <ImageTextContent
-              imageSrc="/images/Section4/Frame.png"
+              imageSrc="/images/Section4/daily.png"
               imageAlt="日常使いのメガネを選ぶイラスト - デスクワークをする人々"
               variant="desktop"
             >
@@ -101,9 +101,9 @@ export default function DailySection() {
         <FullWidthSection backgroundColor="bg-owndays-brown-4" py="py-8">
           <div className="container mx-auto px-6 relative z-10">
             <ImageTextContent
-              imageSrc="/images/Section4/Frame.png"
+              imageSrc="/images/Section4/daily.png"
               imageAlt="日常使いのメガネを選ぶイラスト - デスクワークをする人々"
-              imageMobileSrc="/images/Section4/Frame-1x.png"
+              imageMobileSrc="/images/Section4/daily-1x.png"
               variant="mobile"
             >
               <SectionHeader text="日常使いで" badges={['大', '活', '躍']} align="center" />

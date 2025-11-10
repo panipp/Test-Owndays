@@ -1,5 +1,5 @@
-import ResponsiveImage from '@/components/common/ResponsiveImage'
-import SectionTitle from '@/components/common/SectionTitle'
+import ResponsiveImage from '@/components/shared/ResponsiveImage'
+import SectionTitle from '@/components/shared/SectionTitle'
 
 export default function PromotionSection() {
   return (
@@ -11,16 +11,16 @@ export default function PromotionSection() {
             <div className="mb-8 md:mb-12 lg:mx-12">
               <div className="hidden md:grid md:grid-cols-[1fr_2fr] lg:grid-cols-[2fr_3fr] md:gap-12 lg:gap-32 md:my-8 w-full items-center">
                 <ResponsiveImage
-                  desktopSrc="/images/Section1/date-layout.png"
-                  mobileSrc="/images/Section1/date-layout-1x.png"
+                  desktopSrc="/images/Section1/date-promotion.png"
+                  mobileSrc="/images/Section1/date-promotion-1x.png"
                   alt="キャンペーン期間: 2024年12月22日まで"
                   width={400}
                   height={600}
                   className="lg:px-8 lg:py-4 min-w-0"
                 />
                 <ResponsiveImage
-                  desktopSrc="/images/Section1/Group.png"
-                  mobileSrc="/images/Section1/Group-1x.png"
+                  desktopSrc="/images/Section1/family-group.png"
+                  mobileSrc="/images/Section1/family-group-1x.png"
                   alt="OWNDAYS メガネアイコン"
                   width={400}
                   height={600}
@@ -30,16 +30,16 @@ export default function PromotionSection() {
 
               <div className="grid grid-cols-1 gap-4 md:hidden mb-6">
                 <ResponsiveImage
-                  desktopSrc="/images/Section1/date-layout.png"
-                  mobileSrc="/images/Section1/date-layout-1x.png"
+                  desktopSrc="/images/Section1/date-promotion.png"
+                  mobileSrc="/images/Section1/date-promotion-1x.png"
                   alt="キャンペーン期間: 2024年12月22日まで"
                   width={400}
                   height={600}
                   className="px-8 py-4"
                 />
                 <ResponsiveImage
-                  desktopSrc="/images/Section1/Group.png"
-                  mobileSrc="/images/Section1/Group-1x.png"
+                  desktopSrc="/images/Section1/family-group.png"
+                  mobileSrc="/images/Section1/family-group-1x.png"
                   alt="OWNDAYS メガネアイコン"
                   width={400}
                   height={600}
@@ -49,8 +49,8 @@ export default function PromotionSection() {
 
             <div className="mb-8 md:mb-12 text-center">
               <ResponsiveImage
-                desktopSrc="/images/Section1/main-text-logo.png"
-                mobileSrc="/images/Section1/main-text-logo-1x.png"
+                desktopSrc="/images/Section1/promotion-text.png"
+                mobileSrc="/images/Section1/promotion-text-1x.png"
                 alt="2本同時購入で 2本目半額！"
                 width={800}
                 height={200}
@@ -84,8 +84,8 @@ export default function PromotionSection() {
             
             <div className="lg:hidden">
               <ResponsiveImage
-                desktopSrc="/images/Section1/main-example.png"
-                mobileSrc="/images/Section1/main-example-1x.png"
+                desktopSrc="/images/Section1/glasses-promotion.png"
+                mobileSrc="/images/Section1/glasses-promotion-1x.png"
                 alt="家族・友達・恋人と一緒にメガネを購入するイラスト"
                 width={600}
                 height={400}
@@ -104,7 +104,7 @@ export default function PromotionSection() {
             <div className="hidden lg:flex lg:items-stretch lg:gap-6 lg:mb-4 lg:mx-6">
               <div className="flex-[2] flex items-center m-3">
                 <ResponsiveImage
-                  desktopSrc="/images/Section1/main-example.png"
+                  desktopSrc="/images/Section1/glasses-promotion.png"
                   alt="家族・友達・恋人と一緒にメガネを購入するイラスト"
                   width={600}
                   height={400}

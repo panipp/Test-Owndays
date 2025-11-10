@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import FavoriteButton from '@/components/buttons/FavoriteButton'
-import CategoryBadge from '@/components/common/CategoryBadge'
-import PriceDisplay from '@/components/common/PriceDisplay'
+import CategoryBadge from '@/components/shared/CategoryBadge'
+import PriceDisplay from '@/components/shared/PriceDisplay'
 import OnlineStoreButton from '@/components/buttons/OnlineStoreButton'
 import { Product, BadgeVariant, ButtonVariant, Variant } from '@/lib/types'
 
@@ -11,7 +11,6 @@ interface ProductCardProps {
   showFavorite?: boolean
   buttonVariant?: ButtonVariant
   badgeVariant?: BadgeVariant
-  className?: string
 }
 
 export default function ProductCard({
@@ -20,14 +19,13 @@ export default function ProductCard({
   showFavorite = true,
   buttonVariant = 'rounded',
   badgeVariant = 'green',
-  className = ''
 }: ProductCardProps) {
   const imageSrc = variant === 'mobile' && product.imageMobile ? product.imageMobile : product.image
   const imageHeight = variant === 'mobile' ? 'h-40' : 'h-32'
   const gapClass = variant === 'mobile' ? 'gap-8 md:gap-3' : 'gap-2'
 
   return (
-    <div className={`p-4 ${className} md:text-center`}>
+    <div className={`p-4 md:text-center font-outfit`}>
       <CategoryBadge
         category={product.category}
         variant={badgeVariant}
@@ -51,7 +49,6 @@ export default function ProductCard({
           productName={product.name}
           variant={buttonVariant}
           size="md"
-          className="w-auto"
         />
         {showFavorite && <FavoriteButton productId={product.id} size="sm" />}
       </div>

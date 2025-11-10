@@ -37,7 +37,6 @@ export default function ProductGrid({
             variant={variant}
             buttonVariant={buttonVariant}
             badgeVariant={badgeVariant}
-            className={variant === 'mobile' ? 'font-outfit' : ''}
           />
         ))}
       </div>

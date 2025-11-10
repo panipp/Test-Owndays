@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { fullWidthStyles, joinClasses } from '@/lib/utils'
+import { joinClasses } from '@/lib/utils'
 
 interface FullWidthSectionProps {
   children: ReactNode
@@ -16,8 +16,13 @@ export default function FullWidthSection({
 }: FullWidthSectionProps) {
   return (
     <div 
-      className={joinClasses('w-screen', backgroundColor, py, className)}
-      style={fullWidthStyles}
+      className={joinClasses(
+        'w-screen',
+        '-ml-[calc(50vw-50%)] -mr-[calc(50vw-50%)]',
+        backgroundColor,
+        py,
+        className
+      )}
     >
       {children}
     </div>

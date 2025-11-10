@@ -2,10 +2,11 @@
 
 import Image from 'next/image'
 import ArrowButton from '@/components/buttons/ArrowButton'
-import SpeechBubble from '@/components/common/SpeechBubble'
+import SpeechBubble from '@/components/shared/SpeechBubble'
 import ProductCarousel from '@/components/products/ProductCarousel'
 import OnlineStoreButton from '@/components/buttons/OnlineStoreButton'
-import PriceDisplay from '@/components/common/PriceDisplay'
+import PriceDisplay from '@/components/shared/PriceDisplay'
+import Divider from '@/components/shared/Divider'
 import { Product } from '@/lib/types'
 
 interface PriceRange {
@@ -73,7 +74,7 @@ export default function BudgetSection() {
               >
                 <span className="text-md lg:text-lg text-center lg:text-left mb-2 lg:mb-0 font-mizolet font-bold flex flex-1 items-center justify-center lg:justify-center">{getFullRangeText(range)}</span>
                 <div className="hidden lg:flex items-center gap-4">
-                  <div className="w-[2px] h-full bg-black" aria-hidden="true" />
+                  <Divider orientation="vertical" />
                   <ArrowButton direction="down" size="sm" asDiv />
                 </div>
                 <div className="lg:hidden">
@@ -104,11 +105,11 @@ export default function BudgetSection() {
                       sizes="(max-width: 1024px) 25vw, 256px" 
                     />
                   </div>
-                  <p className="font-bold text-base mb-1">{product.name}</p>
-                  <p className="text-xs mb-3">{product.model}</p>
+                  <p className="text-black font-bold text-base mb-1">{product.name}</p>
+                  <p className="text-black text-xs mb-3">{product.model}</p>
                   <PriceDisplay price={product.price} tax={product.tax} />
                   <div className="flex justify-center mt-auto">
-                    <OnlineStoreButton productName={product.name} variant="rounded" size="md" className="w-auto" />
+                    <OnlineStoreButton productName={product.name} variant="rounded" size="md" />
                   </div>
                 </div>
               ))}
@@ -119,9 +120,9 @@ export default function BudgetSection() {
             </div>
 
             <div className="flex justify-center">
-              <div className="hidden lg:flex group bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black rounded-full px-8 py-4 items-center gap-3 hover:shadow-lg transition-shadow font-bold">
-                <span className="text-sm whitespace-nowrap">
-                  {getFullRangeText(range)}の商品を見る
+              <div className="hidden lg:flex group w-1/3 xl:w-1/4 bg-white border-t-2 border-l-2 border-r-2 border-b-[4px] border-black rounded-full px-2 py-4 items-center justify-between gap-3 hover:shadow-lg transition-shadow font-bold">
+                <span className="text-sm whitespace-nowrap pl-6">
+                {getFullRangeText(range)}の商品を見る
                 </span>
                 <ArrowButton direction="right" size="sm" onClick={() => {}} />
               </div>

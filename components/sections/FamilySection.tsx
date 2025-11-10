@@ -1,11 +1,9 @@
-import Image from 'next/image'
-import ArrowButton from '@/components/buttons/ArrowButton'
-import OptionsList from '@/components/common/OptionsList'
-import SpeechBubble from '@/components/common/SpeechBubble'
+import OptionsList from '@/components/shared/OptionsList'
 import ProductGrid from '@/components/products/ProductGrid'
 import FullWidthSection from '@/components/sections/FullWidthSection'
-import SectionHeader from '@/components/common/SectionHeader'
-import ImageTextContent from '@/components/common/ImageTextContent'
+import SectionHeader from '@/components/shared/SectionHeader'
+import ImageTextContent from '@/components/shared/ImageTextContent'
+import CheckCard from '@/components/shared/CheckCard'
 import { Product, Option } from '@/lib/types'
 
 export default function FamilySection() {
@@ -17,8 +15,8 @@ export default function FamilySection() {
       price: '¥11,000',
       tax: '税込',
       category: 'GLASSES',
-      image: '/images/Section3/AU2101E-3A_C3.png',
-      imageMobile: '/images/Section3/AU2101E-3A_C3-1x.png'
+      image: '/images/Section3/product1.png',
+      imageMobile: '/images/Section3/product1-1x.png'
     },
     { 
       id: 2, 
@@ -27,8 +25,8 @@ export default function FamilySection() {
       price: '¥8,000',
       tax: '税込',
       category: 'SUNGLASSES',
-      image: '/images/Section3/SUN2107N-4S_C1.png',
-      imageMobile: '/images/Section3/SUN2107N-4S_C1-1x.png'
+      image: '/images/Section3/product2.png',
+      imageMobile: '/images/Section3/product2-1x.png'
     },
     { 
       id: 3, 
@@ -37,8 +35,8 @@ export default function FamilySection() {
       price: '¥7,000',
       tax: '税込',
       category: 'KIDS GLASSES',
-      image: '/images/Section3/JU2037N-4S_C3.png',
-      imageMobile: '/images/Section3/JU2037N-4S_C3-1x.png'
+      image: '/images/Section3/product3.png',
+      imageMobile: '/images/Section3/product3-1x.png'
     },
   ]
 
@@ -67,9 +65,9 @@ export default function FamilySection() {
         <FullWidthSection backgroundColor="bg-owndays-green-3">
           <div className="container mx-auto px-6 lg:px-8 relative z-10">
             <ImageTextContent
-              imageSrc="/images/Section3/Frame.png"
+              imageSrc="/images/Section3/family.png"
               imageAlt="家族でメガネを選ぶイラスト - 両親と子供がメガネをかけている様子"
-              imageMobileSrc="/images/Section3/Frame-1x.png"
+              imageMobileSrc="/images/Section3/family-1x.png"
               variant="desktop"
               unoptimized
             >
@@ -99,34 +97,17 @@ export default function FamilySection() {
           title="おすすめオプション"
         />
 
-        {/* CHECK Section - Separate Section Element */}
         <section className="w-full bg-owndays-green-3 py-24 lg:py-20 relative z-10">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="relative mb-32 lg:mb-52">
-              <div className="bg-white rounded-3xl p-2 relative lg:max-w-3xl lg:mx-auto">
-                <div className="absolute top-0 right-0 -translate-y-1/2 -translate-x-1/4 z-10">
-                  <SpeechBubble label="CHECK!" arrowPosition="right" align="right" textColor="black" />
-                </div>
-                <div className="flex flex-row items-center gap-6 p-6 lg:py-2">
-                  <div className="relative w-1/3 h-52 flex-shrink-0">
-                    <Image src="/images/Section3/isolated_tablet_laptop_and_smartphone_composition.png" alt="タブレットとスマートフォンの画面表示" fill className="object-contain" loading="lazy" sizes="100vw" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="font-bold text-sm md:text-lg lg:text-xl mb-2 text-left">
-                          お子さまの度数や保証書を
-                          <span className="bg-owndays-yellow px-1">一括管理!</span>
-                        </p>
-                        <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-left">親子で楽らくリンク機能</p>
-                      </div>
-                      <div className="group flex-shrink-0">
-                        <ArrowButton direction="right" size="sm" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <CheckCard
+                imageSrc="/images/Section3/tablet-smartphone.png"
+                imageAlt="タブレットとスマートフォンの画面表示"
+                title="お子さまの度数や保証書を"
+                subtitle="親子で楽らくリンク機能"
+                highlightText="一括管理!"
+                variant="desktop"
+              />
             </div>
           </div>
         </section>
@@ -136,9 +117,9 @@ export default function FamilySection() {
         <FullWidthSection backgroundColor="bg-owndays-green-3" py="py-8">
           <div className="container mx-auto px-6 relative z-10">
             <ImageTextContent
-              imageSrc="/images/Section3/Frame.png"
+              imageSrc="/images/Section3/family.png"
               imageAlt="家族でメガネを選ぶイラスト - 両親と子供がメガネをかけている様子"
-              imageMobileSrc="/images/Section3/Frame-1x.png"
+              imageMobileSrc="/images/Section3/family-1x.png"
               variant="mobile"
               unoptimized
             >
@@ -173,30 +154,18 @@ export default function FamilySection() {
           title="おすすめオプション"
         />
 
-        {/* CHECK Section - Separate Section Element */}
         <section className="w-full bg-owndays-green-3 py-20 relative z-10">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="relative mb-40">
-              <div className="bg-white rounded-3xl p-2 relative">
-                <div className="absolute top-0 right-0 -translate-y-1/2 -translate-x-1/4 z-10">
-                  <SpeechBubble label="CHECK!" arrowPosition="right" align="right" textColor="black" />
-                </div>
-                <div className="px-10 pt-10 text-center">
-                  <div className="relative w-full h-32 mb-4">
-                    <Image src="/images/Section3/isolated_tablet_laptop_and_smartphone_composition-1x.png" alt="タブレットとスマートフォンの画面表示" fill className="object-contain" loading="lazy" sizes="100vw" />
-                  </div>
-                  <p className="font-bold text-sm mb-2">
-                    お子さまの度数や保証書を
-                    <span className="bg-owndays-yellow px-1">一括管理!</span>
-                  </p>
-                  <p className="text-xl font-bold mb-4">親子で楽らくリンク機能</p>
-                </div>
-                <div className="group flex justify-end">
-                  <div className="rotate-45">
-                    <ArrowButton direction="right" size="sm" />
-                  </div>
-                </div>
-              </div>
+              <CheckCard
+                imageSrc="/images/Section3/tablet-smartphone.png"
+                imageMobileSrc="/images/Section3/tablet-smartphone-1x.png"
+                imageAlt="タブレットとスマートフォンの画面表示"
+                title="お子さまの度数や保証書を"
+                subtitle="親子で楽らくリンク機能"
+                highlightText="一括管理!"
+                variant="mobile"
+              />
             </div>
           </div>
         </section>

@@ -1,10 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import ArrowButton from '@/components/buttons/ArrowButton'
-import OnlineStoreButton from '@/components/buttons/OnlineStoreButton'
-import PriceDisplay from '@/components/common/PriceDisplay'
+import ProductCarouselCard from '@/components/products/ProductCarouselCard'
 import { Product } from '@/lib/types'
 
 interface ProductCarouselProps {
@@ -58,24 +56,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
         >
           {products.map((product) => (
             <div key={product.id} className="flex-shrink-0 w-full md:w-1/2 px-2 md:px-4" role="listitem">
-              <div className="bg-white rounded-lg p-4 relative font-outfit text-center">
-                <div className="relative w-full h-48 mb-4">
-                  <Image 
-                    src={product.imageMobile || product.image} 
-                    alt={`${product.name} ${product.model} - OWNDAYS メガネ`} 
-                    fill 
-                    className="object-contain" 
-                    loading="lazy" 
-                    sizes="(max-width: 768px) 100vw, 50vw" 
-                  />
-                </div>
-                <p className="font-bold text-base mb-1">{product.name}</p>
-                <p className="text-xs mb-3">{product.model}</p>
-                <PriceDisplay price={product.price} tax={product.tax} />
-                <div className="flex justify-center">
-                  <OnlineStoreButton productName={product.name} variant="rounded" size="md" className="w-auto" />
-                </div>
-              </div>
+              <ProductCarouselCard product={product} />
             </div>
           ))}
         </div>

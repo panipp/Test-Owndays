@@ -11,9 +11,9 @@ const VARIANT_CLASSES = {
 }
 
 const SIZE_CLASSES = {
-  sm: 'py-2 px-4 text-xs',
-  md: 'py-4 px-10 text-sm',
-  lg: 'py-3 px-6 text-base'
+  sm: 'py-2 px-4 text-xs w-32',
+  md: 'py-4 px-2 text-sm w-48',
+  lg: 'py-3 px-6 text-base w-40'
 }
 
 export default function OnlineStoreButton({

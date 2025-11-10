@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
+import { joinClasses } from '@/lib/utils'
 
 interface ImageTextContentProps {
   imageSrc: string
@@ -26,9 +27,20 @@ export default function ImageTextContent({
   const imageWidth = isMobile ? 800 : undefined
   const imageHeight = isMobile ? 192 : undefined
   
+  const containerClasses = joinClasses(
+    'flex gap-6',
+    isMobile ? 'flex-col md:flex-row md:items-start mt-12' : 'flex-row items-center mt-12 lg:my-24'
+  )
+  
+  const imageContainerClasses = joinClasses(
+    'relative flex-shrink-0',
+    isMobile ? 'w-full md:w-1/2 h-48' : 'w-1/2 h-64',
+    imageClassName
+  )
+  
   return (
-    <div className={`flex ${isMobile ? 'flex-col md:flex-row md:items-start' : 'flex-row items-center'} gap-6 ${isMobile ? 'mt-12' : 'mt-12 lg:my-24'}`}>
-      <div className={`relative ${isMobile ? 'w-full md:w-1/2 h-48' : 'w-1/2 h-64'} flex-shrink-0 ${imageClassName}`}>
+    <div className={containerClasses}>
+      <div className={imageContainerClasses}>
         {isMobile && imageMobileSrc ? (
           <Image
             src={imageMobileSrc}
@@ -51,7 +63,7 @@ export default function ImageTextContent({
           />
         )}
       </div>
-      <div className={`flex-1 ${contentClassName}`}>
+      <div className={joinClasses('flex-1', contentClassName)}>
         {children}
       </div>
     </div>
