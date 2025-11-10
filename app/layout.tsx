@@ -1,19 +1,6 @@
 import type { Metadata } from 'next'
-import { Outfit, Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
 import MobileNavBottom from '@/components/navigation/MobileNavBottom'
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-outfit',
-  display: 'swap',
-})
-
-const notoSansJP = Noto_Sans_JP({
-  subsets: ['latin'],
-  variable: '--font-noto-sans-jp',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
@@ -34,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ja" className={`${outfit.variable} ${notoSansJP.variable}`}>
+    <html lang="ja">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#B8181E" />

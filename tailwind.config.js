@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'outfit': ['var(--font-outfit)', 'sans-serif'],
-        'noto-sans-jp': ['var(--font-noto-sans-jp)', 'sans-serif'],
+        'outfit': ['Outfit', 'sans-serif'],
+        'noto-sans-jp': ['Noto Sans JP', 'sans-serif'],
         'mizolet': ['mizolet', 'sans-serif'],
         'yu-gothic': ['yu-gothic-pr6n', 'sans-serif'],
         'proxima-nova': ['proxima-nova', 'sans-serif'],
