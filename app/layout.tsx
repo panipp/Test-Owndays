@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: 'みんなメガネ割 | OWNDAYS - 2本目半額キャンペーン',
   description: 'OWNDAYSの特別キャンペーン！2本同時購入で2本目半額。家族・友達・恋人と一緒に、自分用に複数本購入でお得にメガネを購入しよう。',
   keywords: 'OWNDAYS, メガネ, サングラス, キャンペーン, 2本目半額, 割引',
+  icons: {
+    icon: '/images/OWNDAYS_Logo.jpg',
+    shortcut: '/images/OWNDAYS_Logo.jpg',
+    apple: '/images/OWNDAYS_Logo.jpg',
+  },
   openGraph: {
     title: 'みんなメガネ割 | OWNDAYS',
     description: '2本同時購入で2本目半額！OWNDAYSの特別キャンペーン',
